@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-enter-active,
+.page-leave-active {
+  transition: 0.5s ease all;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.page-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}

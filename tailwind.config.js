@@ -8,6 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sora: ['Sora', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+      },
       colors: {
         'primary-blue': '#171045',
         'primary-red': '#ED1C24',
