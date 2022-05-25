@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'ArrowDropDown',
+  name: 'DropDownArrow',
 }
 </script>

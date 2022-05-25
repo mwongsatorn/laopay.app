@@ -9,9 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sora: ['Sora', 'sans-serif'],
-        nunito: ['Nunito', 'sans-serif'],
-        opensans: ['Open Sans', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        'noto-sans-lao': ['Noto Sans Lao', 'sans-serif'],
       },
       colors: {
         'primary-blue': '#171045',

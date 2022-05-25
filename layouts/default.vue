@@ -1,6 +1,6 @@
 <template>
-  <div id="default-layout">
-    <HeaderMenu v-if="$route.path !== '/'"></HeaderMenu>
+  <div id="default-layout" class="">
+    <AppHeader v-if="$route.path !== '/'"></AppHeader>
     <Nuxt></Nuxt>
   </div>
 </template>
