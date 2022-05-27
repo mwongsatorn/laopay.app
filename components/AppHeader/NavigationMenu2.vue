@@ -1,5 +1,5 @@
 <template>
-  <nav class="ml-auto hidden space-x-8 font-noto-sans-lao md:flex">
+  <nav class="ml-auto hidden space-x-8 font-noto-sans-lao text-sm md:flex">
     <NuxtLink
       v-for="menu in menuList"
       :key="menu.routePath"
@@ -7,36 +7,32 @@
       :to="menu.routePath"
       custom
     >
-      <div class="relative flex items-center">
-        <div
-          v-if="!menu.subRoutes && menu.routePath === '/'"
-          class="flex h-24 items-center border-b-4"
+      <div
+        v-if="!menu.subRoutes && menu.routePath === '/'"
+        class="flex h-24 items-center border-b-4"
+        :class="[isExactActive ? 'border-primary-red ' : 'border-transparent ']"
+      >
+        <span
+          class="cursor-pointer"
           :class="[
-            isExactActive ? 'border-primary-red ' : 'border-transparent ',
+            isExactActive ? 'text-primary-red' : 'hover:text-slate-600 ',
           ]"
-        >
-          <span
-            class="cursor-pointer"
-            :class="[
-              isExactActive ? 'text-primary-red' : 'hover:text-slate-600 ',
-            ]"
-            @click="navigate"
-            >{{ menu.routeName }}
-          </span>
-        </div>
+          @click="navigate"
+          >{{ menu.routeName }}
+        </span>
+      </div>
 
-        <div
-          v-else
-          class="flex h-24 items-center border-b-4"
-          :class="[isActive ? 'border-primary-red ' : 'border-transparent ']"
-        >
-          <span
-            class="cursor-pointer"
-            :class="[isActive ? 'text-primary-red' : 'hover:text-slate-600 ']"
-            @click="navigate"
-            >{{ menu.routeName }}
-          </span>
-        </div>
+      <div
+        v-else
+        class="flex h-24 items-center border-b-4"
+        :class="[isActive ? 'border-primary-red ' : 'border-transparent ']"
+      >
+        <span
+          class="cursor-pointer"
+          :class="[isActive ? 'text-primary-red' : 'hover:text-slate-600 ']"
+          @click="navigate"
+          >{{ menu.routeName }}
+        </span>
       </div>
     </NuxtLink>
   </nav>

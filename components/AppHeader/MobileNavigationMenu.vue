@@ -1,67 +1,38 @@
 <template>
-  <nav class="flex flex-col px-2 pt-12">
+  <nav class="flex flex-col divide-y-2 text-sm">
     <NuxtLink
       v-for="menu in menuList"
       :key="menu.routePath"
-      v-slot="{ isActive, isExactActive, navigate }"
+      v-slot="{ isActive, navigate }"
       :to="menu.routePath"
       custom
     >
       <div
-        class="relative flex w-full items-center rounded-lg py-4 px-2 text-sm hover:bg-slate-100"
+        v-if="!menu.subRoutes"
+        class="flex w-full cursor-pointer items-center py-4 px-2"
+        :class="[isActive ? 'bg-primary-red' : '']"
+        @click="navigate"
       >
-        <div
-          v-if="!menu.subRoutes && menu.routePath === '/'"
-          class="flex w-full items-center"
-          @click="navigate"
-        >
-          <span
-            class="cursor-pointer"
-            :class="[isExactActive ? 'text-primary-red' : '']"
-            >{{ menu.routeName }}</span
-          >
+        <span>{{ menu.routeName }}</span>
+      </div>
+
+      <div
+        v-else
+        class="w-full cursor-pointer"
+        @click="menu.showSubRoutes = !menu.showSubRoutes"
+      >
+        <div class="flex items-center justify-between py-4 px-2">
+          <span>{{ menu.routeName }} </span>
+          <span>
+            <IconDropDownArrow class="h-6 w-6"></IconDropDownArrow>
+          </span>
         </div>
 
-        <div
-          v-else-if="!menu.subRoutes"
-          class="flex w-full items-center"
-          @click="navigate"
-        >
-          <span
-            class="cursor-pointer"
-            :class="[isActive ? 'text-primary-red' : '']"
-            >{{ menu.routeName }}</span
-          >
-        </div>
-
-        <div
-          v-else
-          class="flex w-full items-center"
-          @mouseover="menu.showSubRoutes = true"
-          @mouseleave="menu.showSubRoutes = false"
-        >
-          <div
-            class="flex w-full items-center justify-between"
-            :class="[isActive ? 'text-primary-red' : '']"
-          >
-            <span class="cursor-default">{{ menu.routeName }} </span>
-            <span>
-              <IconDropDownArrow class="h-6 w-6"></IconDropDownArrow>
-            </span>
-          </div>
-          <transition
-            name="dropdown"
-            enter-active-class="transition-all duration-300"
-            enter-class="opacity-0 -translate-y-4"
-            enter-to-class="opacity-100 translate-y-0"
-            leave-active-class="transition-all duration-300"
-            leave-to-class="opacity-0 -translate-y-4"
-          >
-            <!-- <DropDownMenu
-              v-show="menu.showSubRoutes"
-              :sub-menu="menu.subRoutes"
-            /> -->
-          </transition>
+        <div class="overflow-hidden">
+          <DropDownMobileMenu
+            v-show="menu.showSubRoutes"
+            :sub-menu="menu.subRoutes"
+          />
         </div>
       </div>
     </NuxtLink>
@@ -73,10 +44,6 @@ export default {
   data() {
     return {
       menuList: [
-        {
-          routePath: '/',
-          routeName: 'Home',
-        },
         {
           routePath: '/about-app',
           routeName: 'About App',

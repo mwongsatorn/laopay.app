@@ -8,6 +8,9 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
+    bodyAttrs: {
+      class: ['min-w-[320px]', 'min-h-screen'],
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,9 +29,9 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
     '~/components',
-    { path: '~/components/icons', prefix: 'Icon' },
-    { path: '~/components/index'},
-    { path: '~/components/AppHeader'},
+    { path: '~/components/Icons', prefix: 'Icon' },
+    { path: '~/components/HomePage' },
+    { path: '~/components/AppHeader' },
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules

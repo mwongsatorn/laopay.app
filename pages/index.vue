@@ -4,9 +4,7 @@
     <AppHeader></AppHeader>
     <QuoteSection :banner-suffix="bannerSuffix"></QuoteSection>
     <ShortAboutUsSection></ShortAboutUsSection>
-    <DownloadAppSection
-      :banner-suffix="bannerSuffix"
-    ></DownloadAppSection>
+    <DownloadAppSection :banner-suffix="bannerSuffix"></DownloadAppSection>
   </div>
 </template>
 

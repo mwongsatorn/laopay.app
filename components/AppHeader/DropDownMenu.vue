@@ -9,8 +9,6 @@
   >
     <div
       class="absolute top-3/4 left-0 z-50 w-80 divide-y divide-solid rounded-lg border-2 bg-white shadow-md"
-      @mouseover="$emit('showSubRoutes')"
-      @mouseleave="$emit('hideSubRoutes')"
     >
       <NuxtLink
         v-for="menu in subMenu"

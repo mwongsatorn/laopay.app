@@ -8,7 +8,7 @@
     leave-to-class="opacity-0 -translate-y-4"
   >
     <div
-      class="absolute top-full right-0 z-50 divide-y divide-solid rounded-lg border-2 bg-white shadow-md"
+      class="absolute top-full right-0 z-50 divide-y divide-solid rounded-lg border-2 bg-white text-xs shadow-md"
       @mouseover="$emit('showLanguageList')"
       @mouseleave="$emit('hideLanguageList')"
     >

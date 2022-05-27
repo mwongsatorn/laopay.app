@@ -1,15 +1,13 @@
 <template>
   <transition
     name="dropdown-mobile-menu"
-    enter-active-class="transition-all overflow-hidden duration-500"
-    enter-class="max-h-0"
-    enter-to-class="h-auto"
-    leave-active-class="transition-all overflow-hidden duration-500"
-    leave-to-class="h-0 "
+    enter-active-class="transition-all duration-300"
+    enter-class="-translate-y-full"
+    enter-to-class="translate-y-0"
+    leave-active-class="transition-all duration-300"
+    leave-to-class="-translate-y-full "
   >
-    <div
-      class="h-0 divide-y divide-solid rounded-lg border-2 bg-white shadow-md"
-    >
+    <div class="pb-2 text-xs">
       <NuxtLink
         v-for="menu in subMenu"
         :key="menu.routePath"
@@ -18,12 +16,11 @@
         custom
       >
         <div
-          class="cursor-pointer rounded-lg px-8 py-4 hover:bg-slate-100"
-          @click="navigate"
+          :class="[isExactActive ? 'bg-primary-red' : '']"
+          class="cursor-pointer py-2 px-4"
+          @click.stop="navigate"
         >
-          <span :class="[isExactActive ? 'text-primary-red' : '']"
-            >{{ menu.routeName }}
-          </span>
+          <span>{{ menu.routeName }} </span>
         </div>
       </NuxtLink>
     </div>

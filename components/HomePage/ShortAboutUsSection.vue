@@ -1,17 +1,17 @@
 <template>
-  <div class="flex min-h-screen bg-stone-400">
+  <div class="bg-stone-400">
     <div
-      class="mx-auto grid max-w-7xl grid-cols-1 place-content-center gap-x-8 px-6 py-20 md:grid-cols-9"
+      class="mx-auto grid min-h-screen max-w-7xl grid-cols-1 place-content-center gap-x-8 px-6 py-20 md:grid-cols-9"
     >
       <div class="md:col-span-5">
         <img
-          class="max-h-full rounded-xl shadow-2xl shadow-stone-700"
+          class="rounded-xl shadow-2xl shadow-stone-700"
           src="~/assets/images/office.jpg"
           alt=""
         />
       </div>
       <div
-        class="flex h-full flex-col justify-between font-noto-sans-lao md:col-span-4"
+        class="flex flex-col justify-between font-noto-sans-lao md:col-span-4"
       >
         <div class="space-y-4">
           <h1 class="mt-8 text-2xl font-bold md:mt-0 lg:text-4xl">

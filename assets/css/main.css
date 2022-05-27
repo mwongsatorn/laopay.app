@@ -7,14 +7,12 @@
 
 .page-enter-active,
 .page-leave-active {
-  transition: 0.5s ease all;
+  transition: 0.3s ease all;
 }
 .page-enter,
 .page-leave-to {
   opacity: 0;
-  transform: translateY(-30px);
 }
 .page-enter-to {
   opacity: 1;
-  transform: translateY(0);
 }

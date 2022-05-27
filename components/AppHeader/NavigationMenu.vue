@@ -1,5 +1,5 @@
 <template>
-  <nav class="ml-auto hidden space-x-8 lg:flex">
+  <nav class="ml-auto hidden space-x-8 text-xs lg:flex">
     <NuxtLink
       v-for="menu in menuList"
       :key="menu.routePath"
@@ -24,12 +24,12 @@
         v-else
         class="relative flex h-24 items-center border-b-4"
         :class="[isActive ? 'border-primary-red ' : 'border-transparent ']"
+        @mouseover="menu.showSubRoutes = true"
+        @mouseleave="menu.showSubRoutes = false"
       >
         <div
           class="flex items-center py-4"
           :class="[isActive ? 'text-primary-red' : '']"
-          @mouseover="menu.showSubRoutes = true"
-          @mouseleave="menu.showSubRoutes = false"
         >
           <span class="cursor-default">{{ menu.routeName }} </span>
           <span>
