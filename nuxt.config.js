@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'laopay.app',
+    title: 'LaoPay Super App',
     htmlAttrs: {
       lang: 'en',
     },
