@@ -2,13 +2,13 @@
   <header
     class="sticky top-0 left-0 z-10 w-full bg-white font-roboto font-bold uppercase shadow-md"
   >
-    <div class="mx-auto flex h-20 max-w-7xl items-center px-4 sm:h-24">
+    <div class="mx-auto flex h-20 max-w-7xl items-center px-4 md:h-24">
       <NuxtLink v-slot="{ navigate }" custom to="/">
         <div class="cursor-pointer" @click="navigate">
           <img
             src="~/assets/images/laopay-logo.png"
             alt=""
-            class="w-20 sm:w-28"
+            class="w-20 md:w-28"
           />
         </div>
       </NuxtLink>
@@ -17,16 +17,14 @@
 
       <div
         class="relative ml-auto flex cursor-pointer items-center md:ml-8"
-        @mouseover="showLanguageList = true"
-        @mouseleave="showLanguageList = false"
+        @click="showLanguageList = !showLanguageList"
       >
         <IconGlobe class="h-6 w-6"></IconGlobe>
         <IconDropDownArrow class="h-6 w-6"></IconDropDownArrow>
 
         <DropDownLanguage
           v-show="showLanguageList"
-          @showLanguageList="showLanguageList = true"
-          @hideLanguageList="showLanguageList = false"
+          
         ></DropDownLanguage>
       </div>
 
