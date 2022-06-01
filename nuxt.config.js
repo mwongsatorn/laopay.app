@@ -30,6 +30,7 @@ export default {
   components: [
     '~/components',
     { path: '~/components/Icons', prefix: 'Icon' },
+    { path: '~/components/Icons/LaoPayFeatures', prefix: 'Icon' },
     { path: '~/components/HomePage' },
     { path: '~/components/AppHeader' },
   ],
