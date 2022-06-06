@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     handleResize() {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth >= 768) {
         this.showMobileNav = false
         this.bodyClass.splice(this.bodyClass.indexOf('overflow-hidden', 1))
       }

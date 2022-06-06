@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     changeBannerSuffix() {
-      if (window.innerWidth > 768) this.bannerSuffix = 'desktop'
+      if (window.innerWidth >= 768) this.bannerSuffix = 'desktop'
       else this.bannerSuffix = 'mobile'
     },
   },
