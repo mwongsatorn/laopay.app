@@ -6,7 +6,7 @@
           bannerSuffix +
           '.jpg')})`,
       }"
-      class="relative -mt-20 h-screen min-h-[45rem] bg-cover bg-[position:65%_50%] sm:-mt-24"
+      class="relative -mt-20 h-screen min-h-[45rem] bg-cover bg-center sm:-mt-24"
     >
       <div
         class="relative top-1/3 -translate-y-1/2 space-y-6 px-6 font-noto-sans-lao md:top-1/2 md:px-8 md:pt-0"
