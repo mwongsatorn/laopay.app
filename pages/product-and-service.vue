@@ -155,9 +155,8 @@
               >
                 1
               </span>
-              <p class="text-center">
-                Open “LaoPay” Application and <br />
-                click “Free Wi-Fi” button
+              <p class="text-center font-noto-sans-lao">
+                ເປີດແອັບ “ລາວເພ້" ແລະ ກົດປຸ່ມ “ຟຣີ ວາຍຟາຍ"
               </p>
             </div>
             <img
@@ -173,7 +172,9 @@
               >
                 2
               </span>
-              <p class="text-center">Watch 7-15 seconds ads</p>
+              <p class="text-center font-noto-sans-lao">
+                ຊົມໂຄສະນາ 7-15 ວິນາທີ
+              </p>
             </div>
             <img
               class="max-h-[400px]"
@@ -188,7 +189,9 @@
               >
                 3
               </span>
-              <p class="text-center">Free Wi-Fi is connected</p>
+              <p class="text-center font-noto-sans-lao">
+                ເຊື່ອມຕໍ່ ຟຣີ ວາຍຟາຍ ສຳເລັດ
+              </p>
             </div>
             <img
               class="max-h-[400px]"
