@@ -16,6 +16,6 @@
 
 <script>
 export default {
-  name: 'QRPayment'
+  name: 'QRPayment',
 }
 </script>

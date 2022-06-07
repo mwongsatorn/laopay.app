@@ -28,6 +28,6 @@
 
 <script>
 export default {
-    name: 'PromotionAndReward'
+  name: 'PromotionAndReward',
 }
 </script>

@@ -32,6 +32,6 @@
 
 <script>
 export default {
-    name: 'WalletTopUp'
+  name: 'WalletTopUp',
 }
 </script>

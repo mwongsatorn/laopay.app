@@ -8,7 +8,7 @@
     }"
   >
     <div
-      class="relative mx-auto max-w-7xl space-y-6 px-6 pt-20 md:pt-0 font-noto-sans-lao md:top-1/2 md:-translate-y-1/2 md:px-8"
+      class="relative mx-auto max-w-7xl space-y-6 px-6 pt-20 font-noto-sans-lao md:top-1/2 md:-translate-y-1/2 md:px-8 md:pt-0"
     >
       <p class="text-center text-3xl font-extrabold md:text-left lg:text-5xl">
         ມີໃຫ້ບໍລິການແລ້ວ

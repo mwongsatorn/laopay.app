@@ -8,7 +8,7 @@
     leave-to-class="opacity-0 -translate-y-4"
   >
     <div
-      class="absolute top-[150%] right-0 w-60 z-50 divide-y divide-solid rounded-lg border-2 bg-white text-sm shadow-md"
+      class="absolute top-[150%] right-0 z-50 w-60 divide-y divide-solid rounded-lg border-2 bg-white text-sm shadow-md"
     >
       <div
         class="cursor-pointer rounded-lg px-8 py-2 text-center hover:bg-slate-100"

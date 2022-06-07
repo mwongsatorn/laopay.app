@@ -22,10 +22,7 @@
         <IconGlobe class="h-6 w-6"></IconGlobe>
         <IconDropDownArrow class="h-6 w-6"></IconDropDownArrow>
 
-        <DropDownLanguage
-          v-show="showLanguageList"
-          
-        ></DropDownLanguage>
+        <DropDownLanguage v-show="showLanguageList"></DropDownLanguage>
       </div>
 
       <div class="ml-4 flex items-center md:hidden">

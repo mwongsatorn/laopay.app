@@ -37,6 +37,6 @@
 
 <script>
 export default {
-    name: 'MobileTopUp'
+  name: 'MobileTopUp',
 }
 </script>

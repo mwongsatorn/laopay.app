@@ -16,6 +16,6 @@
 
 <script>
 export default {
-    name: 'InAppShopping'
+  name: 'InAppShopping',
 }
 </script>
