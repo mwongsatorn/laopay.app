@@ -12,11 +12,11 @@
         class="relative top-1/3 -translate-y-1/2 space-y-6 px-6 font-noto-sans-lao md:top-1/2 md:px-8 md:pt-0"
       >
         <p
-          class="text-center text-3xl font-extrabold md:text-right lg:text-5xl"
+          class="text-center text-3xl font-extrabold md:pr-8 md:text-right lg:text-5xl"
         >
           ຄຸນສົມບັດ ຂອງລາວເພ້
         </p>
-        <p class="text-center text-xl md:text-right lg:text-3xl">
+        <p class="text-center text-xl md:pr-8 md:text-right lg:text-3xl">
           ແອັບພິເຄຊັ້ນທີ່ຕອບສະຫນອງທຸກການ <br />
           ໃຊ້ຈ່າຍ ໂອນເງິນ ຈ່າຍບິນ ຕື່ມເງິນມືຖື <br />
           ເຂົ້າກັບວິຖີຊີວິດຂອງຜູ້ໃຊ້ງານໃນຍຸກປັດຈຸບັນ
@@ -87,7 +87,7 @@
         </div>
 
         <div class="flex flex-col justify-around space-y-8">
-          <div class="flex items-center gap-x-4 lg:flex-row-reverse">
+          <div class="flex items-center gap-x-4">
             <div class="shrink-0">
               <IconPayBill></IconPayBill>
             </div>
@@ -97,7 +97,7 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-x-4 lg:flex-row-reverse">
+          <div class="flex items-center gap-x-4">
             <div class="shrink-0">
               <IconVirtualShoppingCard></IconVirtualShoppingCard>
             </div>
@@ -107,7 +107,7 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-x-4 lg:flex-row-reverse">
+          <div class="flex items-center gap-x-4">
             <div class="shrink-0">
               <IconInAppShopping></IconInAppShopping>
             </div>
@@ -120,7 +120,7 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-x-4 lg:flex-row-reverse">
+          <div class="flex items-center gap-x-4">
             <div class="shrink-0">
               <IconPromotionAndReward></IconPromotionAndReward>
             </div>
@@ -139,12 +139,12 @@
 
     <div class="bg-blue-50">
       <div class="mx-auto max-w-7xl px-4 py-20">
-        <h1
-          class="font-roboto text-2xl font-bold sm:text-3xl lg:text-4xl"
-        >
+        <h1 class="font-roboto text-2xl font-bold sm:text-3xl lg:text-4xl">
           One Click to Connect ™
         </h1>
-        <h2 class="font-noto-sans-lao text-lg sm:text-xl lg:text-2xl text-center pt-4">
+        <h2
+          class="pt-4 text-center font-noto-sans-lao text-lg sm:text-xl lg:text-2xl"
+        >
           3 ຂັ້ນຕອນງ່າຍໆໃນການເຊື່ອມຕໍ່ ຟຣີ ວາຍຟາຍ ໃນແອັບ ລາວເພ້
         </h2>
         <div class="grid grid-cols-1 gap-8 pt-8 md:grid-cols-3">
@@ -156,7 +156,8 @@
                 1
               </span>
               <p class="text-center">
-                Open “LaoPay” Application and click “Free Wi-Fi” button
+                Open “LaoPay” Application and <br />
+                click “Free Wi-Fi” button
               </p>
             </div>
             <img
