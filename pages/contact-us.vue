@@ -4,7 +4,7 @@
       ຕິດຕໍ່ພວກເຮົາ
     </h1>
     <div class="grid grid-cols-1 gap-6 pt-8 md:grid-cols-2">
-      <div class="rounded-lg border-2 shadow-xl">
+      <div class="rounded-lg shadow-xl">
         <div class="h-24 rounded-t-lg bg-gray-200 p-4">
           <img src="~/assets/images/laopay-logo.png" class="h-full" alt="" />
         </div>
@@ -23,8 +23,8 @@
           </p>
         </div>
       </div>
-      <div class="rounded-lg border-2 font-roboto shadow-xl">
-        <div class="flex h-24 items-center bg-gray-200 p-4">
+      <div class="rounded-lg font-roboto shadow-xl">
+        <div class="flex h-24 items-center rounded-t-lg bg-gray-200 p-4">
           <img src="~/assets/images/r2c-logo.png" class="h-12" alt="" />
         </div>
         <div class="space-y-4 p-4">
