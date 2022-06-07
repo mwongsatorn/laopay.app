@@ -4,14 +4,15 @@
       ກ່ຽວກັບພວກເຮົາ
     </h1>
     <div
-      class="mt-8 grid grid-cols-1 rounded-tl-3xl rounded-br-3xl border-2 shadow-lg md:grid-cols-2"
+      class="mt-8 grid grid-cols-1 rounded-tl-3xl rounded-br-3xl  shadow-lg md:grid-cols-2"
     >
       <div
         class="h-64 rounded-tl-3xl bg-cover bg-right sm:h-[25rem] md:h-auto"
         :style="{
           'background-image': `url(${require('~/assets/images/office.jpg')})`,
         }"
-      ></div>
+      >
+      </div>
       <div class="rounded-br-3xl">
         <div class="flex h-24 items-center bg-gray-200 p-4">
           <img src="~/assets/images/r2c-logo.png" class="h-12" alt="" />
@@ -37,7 +38,7 @@
       </div>
     </div>
     <div class="pt-20">
-      <img src="~/assets/images/board-of-director.png" alt="">
+      <img src="~/assets/images/board-of-director.png" alt="" />
     </div>
   </div>
 </template>
