@@ -29,14 +29,7 @@
           </p>
         </div>
         <div class="mt-8">
-          <NuxtLink v-slot="{ navigate }" to="/about-us" custom class="">
-            <button
-              class="ease focus:shadow-outline rounded-md border border-gray-200 bg-gray-200 px-4 py-2 text-gray-700 transition duration-500 hover:bg-gray-300"
-              @click="navigate"
-            >
-              <span class="font-roboto font-bold uppercase">Read More</span>
-            </button>
-          </NuxtLink>
+          <LinkButton to="/about-us">Read Me</LinkButton>
         </div>
       </div>
     </div>
