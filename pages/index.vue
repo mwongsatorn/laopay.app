@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen min-h-[45rem] snap-y snap-mandatory overflow-y-scroll">
     <HeroSection :banner-suffix="bannerSuffix"></HeroSection>
     <AppHeader></AppHeader>
     <QuoteSection :banner-suffix="bannerSuffix"></QuoteSection>
@@ -16,6 +16,13 @@ export default {
       bannerSuffix: 'desktop',
     }
   },
+  head() {
+    return {
+      bodyAttrs: {
+        class: [''],
+      },
+    }
+  },
   mounted() {
     this.changeBannerSuffix()
     window.addEventListener('resize', this.changeBannerSuffix)
@@ -25,6 +32,8 @@ export default {
   },
   methods: {
     changeBannerSuffix() {
+      // eslint-disable-next-line no-console
+      console.log(this.bannerSuffix)
       if (window.innerWidth >= 768) this.bannerSuffix = 'desktop'
       else this.bannerSuffix = 'mobile'
     },

@@ -1,7 +1,10 @@
 <template>
-  <div class="bg-stone-400">
+  <div
+    id="short-about-us-section"
+    class="h-screen min-h-[45rem] snap-start snap-always bg-stone-400"
+  >
     <div
-      class="mx-auto grid min-h-screen max-w-7xl grid-cols-1 place-content-center gap-x-8 px-6 py-20 md:grid-cols-9"
+      class="mx-auto grid h-full max-w-7xl grid-cols-1 place-content-center gap-x-8 px-6 py-20 md:grid-cols-9"
     >
       <div class="md:col-span-5">
         <img

@@ -1,13 +1,14 @@
 <template>
   <div
-    class="relative h-screen min-h-[45rem] bg-primary-blue bg-cover bg-[position:50%_70%] md:bg-right"
+    id="quote-section"
+    class="relative -mt-20 h-screen min-h-[45rem] snap-start bg-primary-blue bg-cover bg-[position:50%_70%] md:-mt-24 md:bg-right"
     :style="{
       'background-image': `url(${require('~/assets/images/index/banner-2-' +
         bannerSuffix +
         '.jpg')})`,
     }"
   >
-    <div class="relative top-[12%] mx-auto max-w-2xl space-y-6 px-4">
+    <div class="relative top-[15%] mx-auto max-w-2xl space-y-6 px-4">
       <h1
         class="text-center text-2xl font-extrabold uppercase text-white sm:text-3xl md:text-4xl"
       >
@@ -19,17 +20,16 @@
         ທີ່ສຸດຂອງແອັບພິເຄຊັ້ນທີ່ຕອບສະໜອງ <br />
         ທຸກຮູບແບບຂອງທ່ານ ສະດວກກວ່າ ງ່າຍກວ່າ ປະຫຍັດກວ່າ
       </p>
-      <div>
-        <div
-          class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 md:gap-y-6"
-        >
-          <div v-for="n in 10" :key="n">
-            <img
-              class="h-6"
-              :src="require(`~/assets/images/partner-logo/partner-${n}.png`)"
-              alt=""
-            />
-          </div>
+
+      <div
+        class="flex flex-wrap justify-center gap-x-6 gap-y-4 md:gap-x-8 md:gap-y-6"
+      >
+        <div v-for="n in 10" :key="n">
+          <img
+            class="h-6"
+            :src="require(`~/assets/images/partner-logo/partner-${n}.png`)"
+            alt=""
+          />
         </div>
       </div>
     </div>
