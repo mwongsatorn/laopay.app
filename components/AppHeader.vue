@@ -13,7 +13,7 @@
         </div>
       </NuxtLink>
 
-      <NavigationMenu2></NavigationMenu2>
+      <NavigationMenu></NavigationMenu>
 
       <div
         class="relative ml-auto flex cursor-pointer items-center md:ml-8"

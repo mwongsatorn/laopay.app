@@ -10,7 +10,7 @@
     @after-enter="$emit('toggleNav')"
   >
     <div
-      class="fixed inset-0 overflow-x-hidden overflow-y-scroll bg-white/50 backdrop-blur-sm"
+      class="fixed inset-0 overflow-x-hidden overflow-y-scroll bg-gradient-to-b from-primary-blue/50 to-primary-red/50 backdrop-blur-sm"
       @click="$emit('toggleNav')"
     >
       <transition
@@ -24,15 +24,15 @@
       >
         <div
           v-show="showMobileNav"
-          class="absolute right-0 min-h-full w-[320px] border-2 bg-primary-blue text-white"
+          class="absolute right-0 min-h-full w-[320px] bg-white"
           @click.stop
         >
-          <div class="flex justify-end py-2 px-2">
+          <div class="flex justify-end py-4 px-2">
             <button @click="$emit('toggleNav')">
               <IconCross class="h-8 w-8"></IconCross>
             </button>
           </div>
-          <MobileNavigationMenu2></MobileNavigationMenu2>
+          <MobileNavigationMenu></MobileNavigationMenu>
         </div>
       </transition>
     </div>
