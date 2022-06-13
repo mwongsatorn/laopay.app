@@ -1,5 +1,5 @@
 <template>
-  <nav class="m-4 flex flex-col font-noto-sans-lao">
+  <nav class="m-4 mt-8 flex flex-col space-y-4 font-noto-sans-lao">
     <NuxtLink
       v-for="menu in menuList"
       :key="menu.routePath"
@@ -8,10 +8,13 @@
       custom
     >
       <div
-        class="flex cursor-pointer items-center justify-center rounded-xl px-2 py-6 font-extrabold"
+        class="flex cursor-pointer items-center space-x-8 rounded-xl px-2 py-4 font-extrabold"
         :class="[isActive ? 'bg-neutral-900 text-white' : '']"
         @click="navigate"
       >
+        <span>
+          <component :is="menu.icon" class="h-8 w-8"></component>
+        </span>
         <span>{{ menu.routeName }}</span>
       </div>
     </NuxtLink>
@@ -26,18 +29,22 @@ export default {
         {
           routePath: '/about-us',
           routeName: 'ກ່ຽວກັບພວກເຮົາ',
+          icon: 'IconAboutUs',
         },
         {
           routePath: '/product-and-service',
           routeName: 'ຜະລິດຕະພັນ ແລະ ບໍລິການ',
+          icon: 'IconProductAndService',
         },
         {
           routePath: '/investor-relation',
           routeName: 'ກ່ຽວກັບການລົງທຶນ',
+          icon: 'IconInvestorRelation',
         },
         {
           routePath: '/contact-us',
           routeName: 'ຕິດຕໍ່ພວກເຮົາ',
+          icon: 'IconContactUs',
         },
       ],
     }

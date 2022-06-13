@@ -8,17 +8,18 @@
       custom
     >
       <div
-        class="flex h-24 cursor-pointer items-center border-b-4"
+        class="flex h-24 cursor-pointer items-center justify-center border-b-4 md:flex-col md:space-y-2 lg:flex-row lg:space-y-0 lg:space-x-4"
         :class="[
           isActive
-            ? 'border-primary-red '
-            : 'border-transparent hover:border-primary-blue',
+            ? 'border-primary-red text-primary-red '
+            : 'border-transparent hover:border-primary-blue hover:text-primary-blue',
         ]"
         @click="navigate"
       >
-        <span :class="[isActive ? 'text-primary-red' : '']"
-          >{{ menu.routeName }}
+        <span>
+          <conponent :is="menu.icon" class="h-6 w-6"></conponent>
         </span>
+        <span>{{ menu.routeName }} </span>
       </div>
     </NuxtLink>
   </nav>
@@ -32,18 +33,22 @@ export default {
         {
           routePath: '/about-us',
           routeName: 'ກ່ຽວກັບພວກເຮົາ',
+          icon: 'IconAboutUs',
         },
         {
           routePath: '/product-and-service',
           routeName: 'ຜະລິດຕະພັນ ແລະ ບໍລິການ',
+          icon: 'IconProductAndService',
         },
         {
           routePath: '/investor-relation',
           routeName: 'ກ່ຽວກັບການລົງທຶນ',
+          icon: 'IconInvestorRelation',
         },
         {
           routePath: '/contact-us',
           routeName: 'ຕິດຕໍ່ພວກເຮົາ',
+          icon: 'IconContactUs',
         },
       ],
     }

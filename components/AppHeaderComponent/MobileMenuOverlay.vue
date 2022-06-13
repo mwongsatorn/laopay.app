@@ -27,7 +27,7 @@
           class="absolute right-0 min-h-full w-[320px] bg-white"
           @click.stop
         >
-          <div class="flex justify-end py-4 px-2">
+          <div class="flex justify-end bg-neutral-900 py-4 px-2 text-white">
             <button @click="$emit('toggleNav')">
               <IconCross class="h-8 w-8"></IconCross>
             </button>
