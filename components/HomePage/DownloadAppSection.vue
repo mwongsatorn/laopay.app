@@ -1,7 +1,7 @@
 <template>
   <div
     id="download-app-section"
-    class="h-screen min-h-[45rem] snap-start bg-cover bg-center md:bg-[position:10%_40%]"
+    class="h-screen min-h-[40rem] bg-cover bg-center md:bg-[position:10%_40%]"
     :style="{
       'background-image': `url(${require('~/assets/images/index/banner-3-' +
         bannerSuffix +

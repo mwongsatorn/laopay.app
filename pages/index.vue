@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen min-h-[45rem] snap-y snap-mandatory overflow-y-scroll">
+  <div id="homepage">
     <HeroSection :banner-suffix="bannerSuffix"></HeroSection>
     <AppHeader></AppHeader>
     <QuoteSection :banner-suffix="bannerSuffix"></QuoteSection>
@@ -14,13 +14,6 @@ export default {
   data() {
     return {
       bannerSuffix: 'desktop',
-    }
-  },
-  head() {
-    return {
-      bodyAttrs: {
-        class: [''],
-      },
     }
   },
   mounted() {

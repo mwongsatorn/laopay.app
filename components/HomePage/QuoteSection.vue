@@ -1,7 +1,7 @@
 <template>
   <div
     id="quote-section"
-    class="relative -mt-20 h-screen min-h-[45rem] snap-start bg-primary-blue bg-cover bg-[position:50%_70%] md:-mt-24 md:bg-right"
+    class="relative -mt-20 h-screen min-h-[40rem] bg-primary-blue bg-cover bg-[position:50%_70%] md:-mt-24 md:bg-right"
     :style="{
       'background-image': `url(${require('~/assets/images/index/banner-2-' +
         bannerSuffix +
