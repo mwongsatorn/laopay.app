@@ -32,8 +32,6 @@ export default {
   },
   methods: {
     changeBannerSuffix() {
-      // eslint-disable-next-line no-console
-      console.log(this.bannerSuffix)
       if (window.innerWidth >= 768) this.bannerSuffix = 'desktop'
       else this.bannerSuffix = 'mobile'
     },
