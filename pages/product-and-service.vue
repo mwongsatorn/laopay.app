@@ -25,8 +25,8 @@
     </div>
 
     <div class="mx-auto max-w-7xl px-4 py-20">
-      <h1 class="font-roboto text-2xl font-bold sm:text-3xl lg:text-4xl">
-        LaoPay Features
+      <h1 class="font-noto-sans-lao text-2xl font-bold sm:text-3xl lg:text-4xl">
+        ຄຸນສົມບັດ ລາວເພ້
       </h1>
       <div
         class="grid grid-cols-1 gap-8 pt-8 font-noto-sans-lao sm:grid-cols-2 lg:grid-cols-[350px_1fr_350px]"
@@ -140,14 +140,14 @@
     <div class="bg-blue-50">
       <div class="mx-auto max-w-7xl px-4 py-20">
         <h1 class="font-roboto text-2xl font-bold sm:text-3xl lg:text-4xl">
-          One Click to Connect ™
+          1 Click 2 Connect ™
         </h1>
         <h2
           class="pt-4 text-center font-noto-sans-lao text-lg sm:text-xl lg:text-2xl"
         >
-          3 ຂັ້ນຕອນງ່າຍໆໃນການເຊື່ອມຕໍ່ ຟຣີ ວາຍຟາຍ ໃນແອັບ ລາວເພ້
+          2 ຂັ້ນຕອນງ່າຍໆໃນການເຊື່ອມຕໍ່ ຟຣີ ວາຍຟາຍ ໃນແອັບ ລາວເພ້
         </h2>
-        <div class="grid grid-cols-1 gap-8 pt-8 md:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2">
           <div class="flex flex-col items-center justify-between space-y-4">
             <div class="flex space-x-4">
               <span
@@ -173,29 +173,12 @@
                 2
               </span>
               <p class="text-center font-noto-sans-lao">
-                ຊົມໂຄສະນາ 7-15 ວິນາທີ
+                ເບິ່ງໂຄສະນາ 7-15 ວິນາທີ ຟຣີ ວາຍຟາຍ ເຊື່ອມຕໍ່ສຳເລັດ
               </p>
             </div>
             <img
               class="max-h-[400px]"
               src="~/assets/images/product-and-service/step2_connect-wifi.png"
-              alt=""
-            />
-          </div>
-          <div class="flex flex-col items-center justify-between space-y-4">
-            <div class="flex space-x-4">
-              <span
-                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-blue font-bold text-white"
-              >
-                3
-              </span>
-              <p class="text-center font-noto-sans-lao">
-                ເຊື່ອມຕໍ່ ຟຣີ ວາຍຟາຍ ສຳເລັດ
-              </p>
-            </div>
-            <img
-              class="max-h-[400px]"
-              src="~/assets/images/product-and-service/step3_connect-wifi.png"
               alt=""
             />
           </div>
