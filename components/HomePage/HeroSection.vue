@@ -6,7 +6,7 @@
         bannerSuffix +
         '.jpg')})`,
     }"
-    class="relative h-screen min-h-[40rem] bg-cover bg-center md:bg-right"
+    class="relative h-screen min-h-[45rem] bg-cover bg-center md:bg-right"
   >
     <div class="relative px-6 pt-16 md:top-1/2 md:-translate-y-1/2 md:pt-0">
       <img

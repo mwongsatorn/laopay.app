@@ -1,5 +1,5 @@
 <template>
-  <div id="short-about-us-section" class="h-screen min-h-[40rem] bg-stone-400">
+  <div id="short-about-us-section" class="h-screen min-h-[45rem] bg-stone-400">
     <div
       class="mx-auto grid h-full max-w-7xl grid-cols-1 place-content-center gap-x-8 px-6 py-20 md:grid-cols-9"
     >
