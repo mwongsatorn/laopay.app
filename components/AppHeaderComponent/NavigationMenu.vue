@@ -8,11 +8,11 @@
       custom
     >
       <div
-        class="flex h-24 cursor-pointer items-center justify-center border-b-4 md:flex-col md:space-y-2 lg:flex-row lg:space-y-0 lg:space-x-4"
+        class="flex h-24 cursor-pointer items-center justify-center border-y-[6px] border-transparent md:flex-col md:space-y-2 lg:flex-row lg:space-y-0 lg:space-x-4"
         :class="[
           isActive
-            ? 'border-primary-red text-primary-red '
-            : 'border-transparent hover:border-primary-blue hover:text-primary-blue',
+            ? 'border-b-primary-red text-primary-red '
+            : 'hover:border-b-primary-blue hover:text-primary-blue',
         ]"
         @click="navigate"
       >
