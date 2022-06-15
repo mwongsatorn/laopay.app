@@ -26,16 +26,26 @@
         ດາວໂຫຼດໄດ້ແລ້ວເທິງ iOS ແລະ Android
       </p>
       <div class="flex items-center justify-center space-x-4 md:justify-start">
-        <img
-          class="w-36 lg:w-52"
-          src="~/assets/images/google-play.png"
-          alt="google-play"
-        />
-        <img
-          class="w-36 lg:w-52"
-          src="~/assets/images/appstore.png"
-          alt="appstore"
-        />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.laopay&hl=en&gl=US"
+          target="_blank"
+        >
+          <img
+            class="w-36 lg:w-52"
+            src="~/assets/images/google-play.png"
+            alt="google-play"
+          />
+        </a>
+        <a
+          href="https://apps.apple.com/th/app/laopay/id1577068598"
+          target="_blank"
+        >
+          <img
+            class="w-36 lg:w-52"
+            src="~/assets/images/appstore.png"
+            alt="appstore"
+          />
+        </a>
       </div>
     </div>
   </div>
