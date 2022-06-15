@@ -3,15 +3,15 @@
     class="sticky top-0 left-0 z-10 w-full bg-white font-roboto font-bold uppercase shadow-md"
   >
     <div class="mx-auto flex h-20 max-w-7xl items-center px-4 md:h-24">
-      <NuxtLink v-slot="{ navigate }" custom to="/">
-        <div class="cursor-pointer" @click="navigate">
+      <div>
+        <NuxtLink to="/">
           <img
             src="~/assets/images/laopay-logo.png"
             alt=""
             class="w-20 md:w-28"
           />
-        </div>
-      </NuxtLink>
+        </NuxtLink>
+      </div>
 
       <NavigationMenu></NavigationMenu>
 
