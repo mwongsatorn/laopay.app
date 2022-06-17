@@ -36,7 +36,7 @@ export default {
           icon: 'IconAboutUs',
         },
         {
-          routePath: '/product-and-service',
+          routePath: '/products-and-services',
           routeName: 'ຜະລິດຕະພັນ ແລະ ບໍລິການ',
           icon: 'IconProductAndService',
         },

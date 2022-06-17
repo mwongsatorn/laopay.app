@@ -4,7 +4,10 @@
       ກ່ຽວກັບການລົງທຶນ
     </h1>
     <div class="w-full pt-8">
-      <img src="~/assets/images/laopay-teaser-040322-01.png" alt="" />
+      <img
+        src="~/assets/images/investor-relation/laopay-teaser-040322-01.png"
+        alt=""
+      />
     </div>
   </div>
 </template>

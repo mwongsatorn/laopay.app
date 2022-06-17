@@ -32,7 +32,7 @@
         >
           <img
             class="w-36 lg:w-52"
-            src="~/assets/images/google-play.png"
+            src="~/assets/images/index/google-play.png"
             alt="google-play"
           />
         </a>
@@ -42,7 +42,7 @@
         >
           <img
             class="w-36 lg:w-52"
-            src="~/assets/images/appstore.png"
+            src="~/assets/images/index/appstore.png"
             alt="appstore"
           />
         </a>

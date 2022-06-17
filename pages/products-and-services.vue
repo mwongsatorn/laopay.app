@@ -2,7 +2,7 @@
   <div>
     <div
       :style="{
-        'background-image': `url(${require('~/assets/images/product-and-service/banner-4-' +
+        'background-image': `url(${require('~/assets/images/products-and-services/banner-4-' +
           bannerSuffix +
           '.jpg')})`,
       }"
@@ -81,7 +81,7 @@
         <div class="hidden lg:block">
           <img
             class="mx-auto max-h-[550px]"
-            src="~/assets/images/product-and-service/app-homepage.png"
+            src="~/assets/images/products-and-services/app-homepage.png"
             alt=""
           />
         </div>
@@ -161,7 +161,7 @@
             </div>
             <img
               class="max-h-[400px]"
-              src="~/assets/images/product-and-service/step1_connect-wifi.png"
+              src="~/assets/images/products-and-services/step1_connect-wifi.png"
               alt=""
             />
           </div>
@@ -178,7 +178,7 @@
             </div>
             <img
               class="max-h-[400px]"
-              src="~/assets/images/product-and-service/step2_connect-wifi.png"
+              src="~/assets/images/products-and-services/step2_connect-wifi.png"
               alt=""
             />
           </div>

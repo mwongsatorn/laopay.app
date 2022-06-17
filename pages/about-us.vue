@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="pt-20">
-      <img src="~/assets/images/board-of-director.jpg" alt="" />
+      <img src="~/assets/images/about-us/board-of-director.jpg" alt="" />
     </div>
   </div>
 </template>
