@@ -1,7 +1,5 @@
 <template>
   <div id="homepage">
-    <HeroSection :banner-suffix="bannerSuffix"></HeroSection>
-    <AppHeader></AppHeader>
     <QuoteSection :banner-suffix="bannerSuffix"></QuoteSection>
     <ShortAboutUsSection></ShortAboutUsSection>
     <DownloadAppSection :banner-suffix="bannerSuffix"></DownloadAppSection>
