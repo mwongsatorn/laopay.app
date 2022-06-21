@@ -33,6 +33,7 @@ export default {
     { path: '~/components/Icons/LaoPayFeatures', prefix: 'Icon' },
     { path: '~/components/Icons/NavigationMenu', prefix: 'Icon' },
     { path: '~/components/HomePage' },
+    { path: '~/components/ProductsAndServicesPage' },
     { path: '~/components/AppHeaderComponent' },
   ],
 
