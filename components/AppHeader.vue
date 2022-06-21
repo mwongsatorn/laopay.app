@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 left-0 z-10 w-full bg-white font-roboto font-bold uppercase shadow-md"
+    class="sticky top-0 left-0 z-[9999] w-full bg-white font-roboto font-bold uppercase shadow-md"
   >
     <div class="mx-auto flex h-20 max-w-7xl items-center px-4 md:h-24">
       <div>
