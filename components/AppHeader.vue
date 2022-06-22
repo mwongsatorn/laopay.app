@@ -48,13 +48,14 @@ export default {
       showMobileOverlay: null,
       showMobileNav: null,
       showLanguageList: null,
-      bodyClass: ['font-noto-sans-lao'],
+      fontFamilyClass: 'font-noto-sans-lao',
+      overflowClass: '',
     }
   },
   head() {
     return {
       bodyAttrs: {
-        class: this.bodyClass,
+        class: [this.fontFamilyClass, this.overflowClass],
       },
     }
   },
@@ -72,16 +73,13 @@ export default {
   },
   methods: {
     handleResize() {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 768 && this.showMobileNav === true)
         this.showMobileNav = false
-        this.bodyClass.splice(this.bodyClass.indexOf('overflow-hidden', 1))
-      }
     },
     toggleOverlay() {
       this.showMobileOverlay = !this.showMobileOverlay
-      if (this.showMobileOverlay === false)
-        this.bodyClass.splice(this.bodyClass.indexOf('overflow-hidden', 1))
-      else this.bodyClass.push('overflow-hidden')
+      if (this.showMobileOverlay === false) this.overflowClass = ''
+      else this.overflowClass = 'overflow-hidden'
     },
   },
 }
