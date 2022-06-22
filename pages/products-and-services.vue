@@ -2,7 +2,8 @@
   <div class="mx-auto max-w-7xl overflow-hidden">
     <SideBarMenu
       :show-side-bar="showSideBar"
-      @toggleSideBar="showSideBar = !showSideBar"
+      @toggleSideBar="toggleSideBar"
+      @closeSideBar="showSideBar = false"
     >
     </SideBarMenu>
     <NuxtChild
@@ -13,9 +14,9 @@
     >
     </NuxtChild>
     <button
-      :class="[!showSideBar ? '' : 'hidden']"
-      class="fixed top-24 z-50 ml-4 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-white shadow-md md:top-28"
-      @click="showSideBar = !showSideBar"
+      :class="[showSideBar ? 'hidden' : '']"
+      class="fixed top-24 ml-4 flex h-12 w-12 items-center justify-center rounded-full border-2 bg-white shadow-md md:top-28"
+      @click="showSideBar = true"
     >
       <IconArrowCollapse class="h-6 w-6"> </IconArrowCollapse>
     </button>
@@ -30,8 +31,13 @@ export default {
     }
   },
   mounted() {
-    if (window.innerWidth <= 1024) this.showSideBar = false
-    else this.showSideBar = true
+    this.toggleSideBar()
+  },
+  methods: {
+    toggleSideBar() {
+      if (window.innerWidth <= 1024) this.showSideBar = false
+      else this.showSideBar = true
+    },
   },
 }
 </script>

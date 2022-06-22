@@ -7,7 +7,7 @@
       class="flex items-center justify-between bg-neutral-900 px-4 py-4 font-bold text-white"
     >
       <span>ເມນູ</span>
-      <button @click="$emit('toggleSideBar')">
+      <button @click="$emit('closeSideBar')">
         <IconArrowCollapse class="h-6 w-6 rotate-180"> </IconArrowCollapse>
       </button>
     </div>
@@ -21,7 +21,7 @@
           :to="menu.routePath"
           custom
         >
-          <li v-if="!menu.subMenu">
+          <li v-if="!menu.subMenu" @click="$emit('toggleSideBar')">
             <a
               class="block py-2"
               :class="[isExactActive ? 'font-bold text-primary-red' : '']"
@@ -43,9 +43,9 @@
                 :to="subMenu.routePath"
                 custom
               >
-                <li>
+                <li @click="$emit('toggleSideBar')">
                   <a
-                    class="block border-l-2 py-1.5 pl-4"
+                    class="block border-l-[3px] py-1.5 pl-4"
                     :class="[
                       isExactActive
                         ? 'border-primary-red font-bold text-primary-red'
