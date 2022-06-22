@@ -77,6 +77,19 @@
               <p>ຕື່ມເງິນມືຖືອອນລາຍ</p>
             </div>
           </div>
+
+          <div class="flex items-center gap-x-4">
+            <div class="shrink-0">
+              <IconTicket></IconTicket>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-bold">ຊື້ປີ້ </span>
+              <p>
+                ຊຳລະຄ່າປີ້ ເຊັ່ນ: ປີ້ລົດໄຟ, ປີ້ຍົນ ຫຼື ຂົນສົ່ງສາທາລະນະອື່ນໆ
+                ບໍ່ຕ້ອງເສຍເວລາໄປເຂົ້າຄິວຍາວເພື່ອຊື້ປີ້
+              </p>
+            </div>
+          </div>
         </div>
 
         <div
@@ -120,6 +133,19 @@
               <span class="text-xl font-bold">ໂປຣໂມຊັ້ນ & ຂອງລາງວັນ </span>
               <p>
                 ຮັບຄະແນນເພື່ອຮັບສ່ວນຫຼຸດ ຫຼື ແລກຂອງລາງວັນຈາກຮ້ານຄ້າທີ່ມີສ່ວນຮ່ວມ
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-x-4">
+            <div class="shrink-0">
+              <IconDelivery></IconDelivery>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-bold">ເດລິເວີ່ລີ້ </span>
+              <p>
+                ເຊື່ອມລາວເພ້ ກັບ ແອັບພິເຄຊັ້ນສົ່ງອາຫານ ເຊັ່ນ: Food Panda
+                ເພື່ອເພີ່ມຄວາມສະດວກໃນການຈ່າຍເງິນ ຊຳລະຄ່າອາຫານໄດ້ທັນທີທີ່ສັ່ງ
               </p>
             </div>
           </div>
