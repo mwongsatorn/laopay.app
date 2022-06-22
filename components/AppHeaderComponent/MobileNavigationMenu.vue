@@ -1,5 +1,5 @@
 <template>
-  <nav class="m-4 mt-8 flex flex-col space-y-4 font-noto-sans-lao">
+  <nav class="m-4 mt-8 flex flex-col space-y-4">
     <NuxtLink
       v-for="menu in menuList"
       :key="menu.routePath"

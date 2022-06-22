@@ -9,7 +9,7 @@
       class="-mt-20 h-screen min-h-[45rem] bg-cover bg-center md:-mt-24"
     >
       <div
-        class="relative top-1/3 -translate-y-1/2 space-y-6 px-6 font-noto-sans-lao md:top-1/2 md:px-8 md:pt-0"
+        class="relative top-1/3 -translate-y-1/2 space-y-6 px-6 md:top-1/2 md:px-8 md:pt-0"
       >
         <p
           class="text-center text-3xl font-extrabold md:pr-8 md:text-right lg:text-5xl"
@@ -25,10 +25,10 @@
     </div>
 
     <div class="px-4 py-20">
-      <h1 class="font-noto-sans-lao text-2xl font-bold sm:text-3xl lg:text-4xl">
+      <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
         ຄຸນສົມບັດ ລາວເພ້
       </h1>
-      <div class="flex flex-wrap gap-8 pt-8 font-noto-sans-lao">
+      <div class="flex flex-wrap gap-8 pt-8">
         <div
           class="flex max-w-fit flex-[1_0_320px] flex-col justify-around space-y-8 sm:max-w-full"
         >
@@ -154,12 +154,10 @@
     </div>
 
     <div class="bg-blue-50 px-4 py-20">
-      <h1 class="font-roboto text-2xl font-bold sm:text-3xl lg:text-4xl">
+      <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
         1 Click 2 Connect ™
       </h1>
-      <h2
-        class="pt-4 text-center font-noto-sans-lao text-lg sm:text-xl lg:text-2xl"
-      >
+      <h2 class="pt-4 text-center text-lg sm:text-xl lg:text-2xl">
         2 ຂັ້ນຕອນງ່າຍໆໃນການເຊື່ອມຕໍ່ ຟຣີ ວາຍຟາຍ ໃນແອັບ ລາວເພ້
       </h2>
       <div class="flex flex-wrap justify-around gap-8 pt-8">
@@ -170,7 +168,7 @@
             >
               1
             </span>
-            <p class="text-center font-noto-sans-lao">
+            <p class="text-center">
               ເປີດແອັບ “ລາວເພ້" ແລະ ກົດປຸ່ມ “ຟຣີ ວາຍຟາຍ"
             </p>
           </div>
@@ -189,7 +187,7 @@
             >
               2
             </span>
-            <p class="text-center font-noto-sans-lao">
+            <p class="text-center">
               ເບິ່ງໂຄສະນາ 7-15 ວິນາທີ ຟຣີ ວາຍຟາຍ ເຊື່ອມຕໍ່ສຳເລັດ
             </p>
           </div>

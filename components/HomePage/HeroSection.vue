@@ -20,7 +20,7 @@
         SUPER <span class="text-primary-red">LIFESTYLE</span> APP
       </h1>
       <p
-        class="pt-4 text-center font-noto-sans-lao text-lg font-bold tracking-[0.3rem] sm:text-2xl md:text-right"
+        class="pt-4 text-center text-lg font-bold tracking-[0.3rem] sm:text-2xl md:text-right"
       >
         ໃຫ້ທຸກຮູບແບບຂອງທ່ານ <br />
         ເປັນເລື່ອງພິເສດ

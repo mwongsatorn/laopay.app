@@ -1,5 +1,5 @@
 <template>
-  <nav class="ml-auto hidden space-x-8 font-noto-sans-lao text-sm md:flex">
+  <nav class="ml-auto hidden space-x-8 text-sm md:flex">
     <NuxtLink
       v-for="menu in menuList"
       :key="menu.routePath"

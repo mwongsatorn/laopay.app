@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-20 bottom-0 z-10 overflow-y-scroll whitespace-nowrap bg-white font-noto-sans-lao transition-all duration-300 md:top-24"
+    class="fixed top-20 bottom-0 z-10 overflow-y-scroll whitespace-nowrap bg-white transition-all duration-300 md:top-24"
     :class="[showSideBar ? 'w-[300px]' : 'w-0']"
   >
     <div

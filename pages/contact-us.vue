@@ -1,21 +1,19 @@
 <template>
   <div class="mx-auto max-w-7xl px-4 py-12">
-    <h1 class="font-noto-sans-lao text-2xl font-bold sm:text-3xl lg:text-4xl">
-      ຕິດຕໍ່ພວກເຮົາ
-    </h1>
+    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">ຕິດຕໍ່ພວກເຮົາ</h1>
     <div class="grid grid-cols-1 gap-6 pt-8 md:grid-cols-2">
       <div class="rounded-lg shadow-xl">
         <div class="h-24 rounded-t-lg bg-gray-200 p-4">
           <img src="~/assets/images/laopay-logo.png" class="h-full" alt="" />
         </div>
         <div class="space-y-4 p-4">
-          <p class="font-roboto">
+          <p class="">
             <span class="font-bold">LaoPay Vientiane Sole Co., Ltd</span>.
             <br />
             Buengkayong Village, Sisattanak, Vientiane Capital, Lao PDR No. 560
             Unit 29
           </p>
-          <p class="font-noto-sans-lao">
+          <p class="">
             <span class="font-bold">ບໍລິສັດ ລາວເພ ວຽງຈັນ ຈໍາກັດຜູ້ດຽວ</span>
             <br />
             ບ้ານບຶງຂະຫຍອງ ເມືອງສີສັດຕະນາກ ແຂວງນະຄອນຫຼວງວຽງຈັນ ເຮືອນເລກທ่ີ 560
@@ -23,7 +21,7 @@
           </p>
         </div>
       </div>
-      <div class="rounded-lg font-roboto shadow-xl">
+      <div class="rounded-lg shadow-xl">
         <div class="flex h-24 items-center rounded-t-lg bg-gray-200 p-4">
           <img src="~/assets/images/r2c-logo.png" class="h-12" alt="" />
         </div>

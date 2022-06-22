@@ -1,8 +1,6 @@
 <template>
   <div class="mx-auto max-w-7xl px-4 py-12">
-    <h1 class="font-noto-sans-lao text-2xl font-bold sm:text-3xl lg:text-4xl">
-      ກ່ຽວກັບພວກເຮົາ
-    </h1>
+    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">ກ່ຽວກັບພວກເຮົາ</h1>
     <div
       class="mt-8 grid grid-cols-1 rounded-tl-3xl rounded-br-3xl shadow-lg md:grid-cols-2"
     >
@@ -17,7 +15,7 @@
           <img src="~/assets/images/r2c-logo.png" class="h-12" alt="" />
         </div>
 
-        <p class="p-4 font-noto-sans-lao">
+        <p class="p-4">
           ບໍລິສັດ ລາວເພ້ ວຽງຈັນ ຈຳກັດຜູ້ດຽວ ກໍ່ຕັ້ງຂຶ້ນໃນປີ 2019 ດຳເນີນທຸລະກິດ
           ອີວໍເລັດ ພັດທະນາແອັບພິເຄຊັ້ນໂດຍໃຊ້ຊື່ວ່າ: ລາເພ້ (LaoPay) ແລະ
           ເປັນຜູ້ໃຫ້ບໍລິການ ອອນລາຍເພເມັ້ນ ໂດຍເກີດຈາກຄວາມຮ່ວມມືກັນລະຫວ່າງ ບໍລິສັດ

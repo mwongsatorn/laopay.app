@@ -15,7 +15,7 @@
         Super Lifestyle App
       </h1>
       <p
-        class="text-center font-noto-sans-lao text-lg font-light tracking-wider text-white sm:text-xl md:text-2xl"
+        class="text-center text-lg font-light tracking-wider text-white sm:text-xl md:text-2xl"
       >
         ທີ່ສຸດຂອງແອັບພິເຄຊັ້ນທີ່ຕອບສະໜອງ ທຸກຮູບແບບຂອງທ່ານ
         <br class="hidden sm:block" />

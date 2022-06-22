@@ -10,9 +10,7 @@
           alt=""
         />
       </div>
-      <div
-        class="flex flex-col justify-between font-noto-sans-lao md:col-span-4"
-      >
+      <div class="flex flex-col justify-between md:col-span-4">
         <div class="space-y-4">
           <h1 class="mt-8 text-2xl font-bold md:mt-0 lg:text-4xl">
             ກ່ຽວກັບພວກເຮົາ
