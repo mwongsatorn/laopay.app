@@ -1,23 +1,27 @@
 <template>
-  <nav class="m-4 mt-8 flex flex-col space-y-4">
-    <NuxtLink
-      v-for="menu in menuList"
-      :key="menu.routePath"
-      v-slot="{ isActive, navigate }"
-      :to="menu.routePath"
-      custom
-    >
-      <div
-        class="flex cursor-pointer items-center space-x-8 rounded-xl px-2 py-4 font-extrabold"
-        :class="[isActive ? 'bg-neutral-900 text-white' : '']"
-        @click="navigate"
+  <nav>
+    <ul class="m-4 mt-8 flex flex-col space-y-4">
+      <NuxtLink
+        v-for="menu in menuList"
+        :key="menu.routePath"
+        v-slot="{ isActive, navigate }"
+        :to="menu.routePath"
+        custom
       >
-        <span>
-          <component :is="menu.icon" class="h-8 w-8"></component>
-        </span>
-        <span>{{ menu.routeName }}</span>
-      </div>
-    </NuxtLink>
+        <li>
+          <a
+            class="flex cursor-pointer items-center space-x-8 rounded-xl px-2 py-4 font-extrabold"
+            :class="[isActive ? activeClass : '']"
+            @click="navigate"
+          >
+            <span>
+              <component :is="menu.icon" class="h-8 w-8"></component>
+            </span>
+            <span>{{ menu.routeName }}</span>
+          </a>
+        </li>
+      </NuxtLink>
+    </ul>
   </nav>
 </template>
 
@@ -25,6 +29,7 @@
 export default {
   data() {
     return {
+      activeClass: 'bg-neutral-900 text-white',
       menuList: [
         {
           routePath: '/about-us',
@@ -32,7 +37,7 @@ export default {
           icon: 'IconAboutUs',
         },
         {
-          routePath: '/products-and-services/highlight-features',
+          routePath: '/products-and-services',
           routeName: 'ຜະລິດຕະພັນ ແລະ ບໍລິການ',
           icon: 'IconProductAndService',
         },
@@ -48,6 +53,12 @@ export default {
         },
       ],
     }
+  },
+  watch: {
+    $route() {
+      if (this.$route.path === '/products-and-services')
+        this.$router.replace('/products-and-services/highlight-features')
+    },
   },
 }
 </script>

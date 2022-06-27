@@ -13,25 +13,28 @@
         </NuxtLink>
       </div>
 
-      <NavigationMenu></NavigationMenu>
+      <div class="ml-auto flex">
+        <NavigationMenu></NavigationMenu>
 
-      <div
-        class="relative ml-auto flex cursor-pointer items-center md:ml-8"
-        @click="showLanguageList = !showLanguageList"
-      >
-        <IconGlobe class="h-6 w-6"></IconGlobe>
-        <IconDropDownArrow class="h-6 w-6"></IconDropDownArrow>
+        <div
+          class="flex cursor-pointer items-center md:ml-8"
+          @click="showLanguageList = !showLanguageList"
+        >
+          <IconGlobe class="h-6 w-6"></IconGlobe>
+          <IconDropDownArrow class="h-6 w-6"></IconDropDownArrow>
 
-        <DropDownLanguage v-show="showLanguageList"></DropDownLanguage>
-      </div>
+          <DropDownLanguage v-show="showLanguageList"></DropDownLanguage>
+        </div>
 
-      <div class="ml-4 flex items-center md:hidden">
-        <IconHamburgerMenu
-          class="inline h-6 w-6 cursor-pointer transition-all"
-          @click.native="toggleOverlay"
-        />
+        <div class="ml-4 flex items-center md:hidden">
+          <IconHamburgerMenu
+            class="inline h-6 w-6 cursor-pointer transition-all"
+            @click.native="toggleOverlay"
+          />
+        </div>
       </div>
     </div>
+
     <MobileMenuOverlay
       v-if="showMobileOverlay"
       :show-mobile-nav="showMobileNav"
