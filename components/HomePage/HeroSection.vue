@@ -1,41 +1,32 @@
 <template>
   <div
     id="hero-section"
-    class="relative h-screen min-h-[45rem] bg-gradient-to-r from-primary-blue/50 to-primary-red/50"
+    class="relative h-screen min-h-[45rem] bg-[url('~/assets/images/index/hero-bg-mobile.jpg')] bg-cover bg-center sm:bg-[url('~/assets/images/index/hero-bg-tablet.jpg')] lg:bg-[url('~/assets/images/index/hero-bg-desktop.jpg')]"
   >
-    <div class="relative px-6 pt-16 md:top-1/2 md:-translate-y-1/2 md:pt-0">
+    <div
+      class="relative px-6 pt-16 text-primary-blue lg:top-1/2 lg:-translate-y-1/2 lg:pt-0"
+    >
       <img
-        class="mx-auto w-32 sm:w-36 md:mx-0 md:ml-auto md:w-40"
+        class="mx-auto w-32 sm:w-36 lg:mx-0 lg:mr-auto lg:w-40"
         src="~/assets/images/laopay-logo.png"
         alt=""
       />
       <h1
-        class="pt-4 text-center text-2xl font-extrabold text-primary-blue sm:text-4xl md:text-right md:text-5xl"
+        class="pt-4 text-center text-2xl font-extrabold sm:text-4xl lg:text-left lg:text-5xl"
       >
         SMART LIFE
       </h1>
       <h1
-        class="text-center text-2xl font-extrabold sm:text-4xl md:text-right md:text-5xl"
+        class="text-center text-2xl font-extrabold sm:text-4xl lg:text-left lg:text-5xl"
       >
         SUPER <span class="text-primary-red">LIFESTYLE</span> APP
       </h1>
       <p
-        class="pt-4 text-center text-lg font-bold tracking-[0.3rem] sm:text-2xl md:text-right"
+        class="pt-4 text-center text-lg font-bold tracking-[0.3rem] sm:text-2xl lg:text-left"
       >
         ໃຫ້ທຸກຮູບແບບຂອງທ່ານ <br />
         ເປັນເລື່ອງພິເສດ
       </p>
-    </div>
-
-    <div
-      class="absolute bottom-1/2 right-1/2 flex translate-x-1/2 translate-y-12 flex-col items-center space-y-4 md:bottom-4 md:right-4 md:translate-x-0 md:translate-y-0 md:flex-row md:space-x-4"
-    >
-      <span class="font-bold uppercase">Scroll Down</span>
-      <span>
-        <IconCircleArrowDown
-          class="h-8 w-8 animate-bounce"
-        ></IconCircleArrowDown>
-      </span>
     </div>
   </div>
 </template>
