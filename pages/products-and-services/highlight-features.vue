@@ -1,26 +1,37 @@
 <template>
   <div>
     <div
-      :style="{
-        'background-image': `url(${require('~/assets/images/products-and-services/banner-4-' +
-          bannerSuffix +
-          '.jpg')})`,
-      }"
-      class="-mt-20 h-screen min-h-[45rem] bg-cover bg-center md:-mt-24"
+      class="relative flex h-[calc(100vh-5rem)] min-h-[45rem] flex-col bg-primary-blue py-12 text-white md:h-[calc(100vh-6rem)]"
     >
-      <div
-        class="relative top-1/3 -translate-y-1/2 space-y-6 px-6 md:top-1/2 md:px-8 md:pt-0"
-      >
-        <p
-          class="text-center text-3xl font-extrabold md:pr-8 md:text-right lg:text-5xl"
-        >
-          ຄຸນສົມບັດ ຂອງລາວເພ້
+      <div class="relative mx-auto max-w-xl space-y-6 px-4">
+        <p class="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">
+          ຄຸນສົມບັດຂອງລາວເພ້
         </p>
-        <p class="text-center text-xl md:pr-8 md:text-right lg:text-3xl">
-          ແອັບພິເຄຊັ້ນທີ່ຕອບສະຫນອງທຸກການ <br />
-          ໃຊ້ຈ່າຍ ໂອນເງິນ ຈ່າຍບິນ ຕື່ມເງິນມືຖື <br />
+        <p class="text-center text-lg sm:text-xl lg:text-2xl">
+          ແອັບພິເຄຊັ້ນທີ່ຕອບສະຫນອງທຸກການ ໃຊ້ຈ່າຍ ໂອນເງິນ ຈ່າຍບິນ ຕື່ມເງິນມືຖື
           ເຂົ້າກັບວິຖີຊີວິດຂອງຜູ້ໃຊ້ງານໃນຍຸກປັດຈຸບັນ
         </p>
+      </div>
+
+      <div class="relative my-auto flex w-full justify-center px-4">
+        <div class="absolute h-full w-full max-w-lg">
+          <div
+            class="custom-blur absolute top-4 -left-4 h-52 w-52 animate-blob rounded-full bg-amber-600 sm:h-60 sm:w-60 lg:h-72 lg:w-72"
+          />
+          <div
+            class="animation-delay-2000 custom-blur absolute top-4 -right-4 h-52 w-52 animate-blob rounded-full bg-purple-600 sm:h-60 sm:w-60 lg:h-72 lg:w-72"
+          />
+          <div
+            class="animation-delay-4000 custom-blur absolute -bottom-4 left-20 h-52 w-52 animate-blob rounded-full bg-primary-red sm:h-60 sm:w-60 lg:h-72 lg:w-72"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="~/assets/images/products-and-services/app-showcase.png"
+            alt=""
+            class="max-h-[350px]"
+          />
+        </div>
       </div>
     </div>
 
