@@ -27,7 +27,7 @@
         </div>
         <div class="relative">
           <img
-            src="~/assets/images/products-and-services/app-showcase.png"
+            src="~/assets/images/products-and-services/highlight-features/app-showcase.png"
             alt=""
             class="max-h-[350px]"
           />
@@ -186,7 +186,7 @@
           <div class="self-center">
             <img
               class="max-h-[400px]"
-              src="~/assets/images/products-and-services/step1_connect-wifi.png"
+              src="~/assets/images/products-and-services/highlight-features/step1_connect-wifi.png"
               alt=""
             />
           </div>
@@ -205,7 +205,7 @@
           <div class="self-center">
             <img
               class="max-h-[400px]"
-              src="~/assets/images/products-and-services/step2_connect-wifi.png"
+              src="~/assets/images/products-and-services/highlight-features/step2_connect-wifi.png"
               alt=""
             />
           </div>
