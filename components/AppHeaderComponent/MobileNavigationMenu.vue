@@ -4,12 +4,13 @@
       <NuxtLink
         v-for="menu in menuList"
         :key="menu.routePath"
-        v-slot="{ isActive, navigate }"
+        v-slot="{ isActive, navigate, href }"
         :to="menu.routePath"
         custom
       >
         <li>
           <a
+            :href="href"
             class="flex cursor-pointer items-center space-x-8 rounded-xl px-2 py-4 font-extrabold"
             :class="[isActive ? activeClass : '']"
             @click="navigate"
