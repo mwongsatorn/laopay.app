@@ -10,7 +10,7 @@
     @after-enter="$emit('toggleNav')"
   >
     <div
-      class="fixed inset-0 overflow-x-hidden overflow-y-scroll bg-gradient-to-b from-primary-blue/50 to-primary-red/50 backdrop-blur-sm"
+      class="fixed inset-0 overflow-y-auto overflow-x-hidden bg-gradient-to-b from-primary-blue/50 to-primary-red/50 backdrop-blur-sm"
       @click="$emit('toggleNav')"
     >
       <transition
