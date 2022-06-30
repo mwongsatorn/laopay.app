@@ -9,7 +9,7 @@
     <NuxtChild
       class="transition-all duration-300"
       :class="[
-        showSideBar ? 'md:ml-[300px] md:w-[calc(100%-300px)]' : 'w-full',
+        showSideBar ? 'md:ml-[280px] md:w-[calc(100%-280px)]' : 'w-full',
       ]"
     >
     </NuxtChild>
