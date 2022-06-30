@@ -56,9 +56,15 @@ export default {
   },
   watch: {
     $route() {
-      if (this.$route.path === '/products-and-services')
+      if (this.$route.path === '/products-and-services') {
         this.$router.replace('/products-and-services/highlight-features')
+        window.scrollTo(0, 0)
+      }
     },
+  },
+  mounted() {
+    if (this.$route.path === '/products-and-services')
+      this.$router.replace('/products-and-services/highlight-features')
   },
 }
 </script>
