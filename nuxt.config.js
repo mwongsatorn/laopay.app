@@ -54,10 +54,13 @@ export default {
     ],
     defaultLocale: 'lo',
     strategy: 'prefix_except_default',
-    vueI18nLoader: true,
+    detectBrowserLanguage: {
+      fallbackLocale: 'en',
+    },
     vueI18n: {
       fallbackLocale: 'lo',
     },
+    vueI18nLoader: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
