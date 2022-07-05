@@ -5,7 +5,7 @@
         v-for="menu in menuList"
         :key="menu.routePath"
         v-slot="{ isActive, navigate, href }"
-        :to="menu.routePath"
+        :to="localePath(menu.routePath)"
         custom
       >
         <li>
@@ -26,35 +26,60 @@
   </nav>
 </template>
 
+<i18n>
+{
+  "lo": {
+    "menu": {
+      "aboutUs": "ກ່ຽວກັບພວກເຮົາ",
+      "productsAndServices": "ຜະລິດຕະພັນ ແລະ ບໍລິການ",
+      "investorRelation": "ກ່ຽວກັບການລົງທຶນ",
+      "contactUs": "ຕິດຕໍ່ພວກເຮົາ"
+    }
+  },
+  "en": {
+    "menu": {
+      "aboutUs": "about us",
+      "productsAndServices": "products and services",
+      "investorRelation": "investor relation",
+      "contactUs": "contact us"
+    }
+  }
+}
+</i18n>
+
 <script>
 export default {
   data() {
     return {
       activeClass: 'border-b-primary-red text-primary-red ',
       inActiveClass: 'hover:border-b-primary-blue hover:text-primary-blue',
-      menuList: [
+    }
+  },
+  computed: {
+    menuList() {
+      return [
         {
           routePath: '/about-us',
-          routeName: 'ກ່ຽວກັບພວກເຮົາ',
+          routeName: this.$t('menu.aboutUs'),
           icon: 'IconAboutUs',
         },
         {
           routePath: '/products-and-services',
-          routeName: 'ຜະລິດຕະພັນ ແລະ ບໍລິການ',
+          routeName: this.$t('menu.productsAndServices'),
           icon: 'IconProductAndService',
         },
         {
           routePath: '/investor-relation',
-          routeName: 'ກ່ຽວກັບການລົງທຶນ',
+          routeName: this.$t('menu.investorRelation'),
           icon: 'IconInvestorRelation',
         },
         {
           routePath: '/contact-us',
-          routeName: 'ຕິດຕໍ່ພວກເຮົາ',
+          routeName: this.$t('menu.contactUs'),
           icon: 'IconContactUs',
         },
-      ],
-    }
+      ]
+    },
   },
 }
 </script>
