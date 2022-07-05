@@ -18,6 +18,23 @@
 
 <script>
 export default {
+  beforeRouteEnter(to, from, next) {
+    if (
+      to.path === '/products-and-services' ||
+      to.path === '/products-and-services/'
+    )
+      next('/products-and-services/highlight-features')
+    else next()
+  },
+  beforeRouteUpdate(to, from, next) {
+    if (
+      to.path === '/products-and-services' ||
+      to.path === '/products-and-services/'
+    )
+      next(false)
+    else next()
+  },
+  scrollToTop: true,
   data() {
     return {
       showSideBar: null,
