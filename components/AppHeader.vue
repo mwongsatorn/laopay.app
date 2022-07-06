@@ -51,16 +51,23 @@ export default {
       showMobileOverlay: null,
       showMobileNav: null,
       showLanguageList: null,
-      fontFamilyClass: 'font-noto-sans-lao',
       overflowClass: '',
     }
   },
   head() {
     return {
       bodyAttrs: {
-        class: [this.fontFamilyClass, this.overflowClass],
+        class: this.bodyClass,
       },
     }
+  },
+  computed: {
+    fontFamilyClass() {
+      return this.$i18n.locale === 'lo' ? 'font-noto-sans-lao' : 'font-roboto'
+    },
+    bodyClass() {
+      return [this.fontFamilyClass, this.overflowClass]
+    },
   },
   watch: {
     $route() {
