@@ -8,9 +8,19 @@
       leave-active-class="transition-all duration-300"
       leave-to-class="opacity-0"
     >
-      <HeroSection v-if="$route.path === '/'"></HeroSection>
+      <HeroSection v-if="isHomePage"></HeroSection>
     </transition>
     <AppHeader></AppHeader>
     <Nuxt></Nuxt>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    isHomePage() {
+      return this.$route.name.includes('index')
+    },
+  },
+}
+</script>
