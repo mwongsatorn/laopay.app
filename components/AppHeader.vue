@@ -13,11 +13,11 @@
         </NuxtLink>
       </div>
 
-      <div class="ml-auto flex">
+      <div class="ml-auto flex h-20 md:h-24">
         <NavigationMenu></NavigationMenu>
 
         <div
-          class="flex cursor-pointer items-center md:ml-8"
+          class="relative flex cursor-pointer items-center md:ml-8"
           @click="showLanguageList = !showLanguageList"
         >
           <IconGlobe class="h-6 w-6"></IconGlobe>
