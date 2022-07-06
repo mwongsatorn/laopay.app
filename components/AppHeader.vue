@@ -4,7 +4,7 @@
   >
     <div class="mx-auto flex h-20 max-w-7xl items-center px-4 md:h-24">
       <div>
-        <NuxtLink to="/">
+        <NuxtLink :to="localePath('/')">
           <img
             src="~/assets/images/laopay-logo.png"
             alt=""
