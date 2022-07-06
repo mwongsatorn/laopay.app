@@ -24,12 +24,22 @@
       <p
         class="pt-4 text-center text-lg font-bold tracking-[0.3rem] sm:text-2xl lg:text-left"
       >
-        ໃຫ້ທຸກຮູບແບບຂອງທ່ານ <br />
-        ເປັນເລື່ອງພິເສດ
+        {{ $t('text') }}
       </p>
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "lo": {
+    "text": "ໃຫ້ທຸກຮູບແບບຂອງທ່ານ ເປັນເລື່ອງພິເສດ"
+  },
+  "en": {
+    "text": "MAKE EVERY OF YOUR LIFESTYLE SPEACIAL"
+  }
+}
+</i18n>
 
 <script>
 export default {

@@ -8,7 +8,7 @@
         '.jpg')})`,
     }"
   >
-    <div class="relative top-[15%] mx-auto max-w-7xl space-y-6 px-4">
+    <div class="relative top-[15%] mx-auto max-w-xl space-y-6 px-4">
       <h1
         class="text-center text-2xl font-extrabold uppercase text-white sm:text-3xl md:text-4xl"
       >
@@ -17,9 +17,7 @@
       <p
         class="text-center text-lg font-light tracking-wider text-white sm:text-xl md:text-2xl"
       >
-        ທີ່ສຸດຂອງແອັບພິເຄຊັ້ນທີ່ຕອບສະໜອງ ທຸກຮູບແບບຂອງທ່ານ
-        <br class="hidden sm:block" />
-        ສະດວກກວ່າ ງ່າຍກວ່າ ປະຫຍັດກວ່າ
+        {{ $t('quote') }}
       </p>
 
       <div
@@ -36,6 +34,17 @@
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "lo": {
+    "quote": "ທີ່ສຸດຂອງແອັບພິເຄຊັ້ນທີ່ຕອບສະໜອງ ທຸກຮູບແບບຂອງທ່ານສະດວກກວ່າ ງ່າຍກວ່າ ປະຫຍັດກວ່າ"
+  },
+  "en": {
+    "quote": "The top e-Wallet application which match with your lifestyle to be more convenient, easier, and save more"
+  }
+}
+</i18n>
 
 <script>
 export default {

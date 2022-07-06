@@ -12,7 +12,7 @@
       class="relative mx-auto max-w-7xl space-y-6 px-6 pt-20 md:top-1/2 md:-translate-y-1/2 md:px-8 md:pt-0"
     >
       <p class="text-center text-3xl font-extrabold md:text-left lg:text-5xl">
-        ມີໃຫ້ບໍລິການແລ້ວ
+        {{ $t('text_1') }}
       </p>
       <div
         class="relative mx-auto flex w-[275px] items-center justify-center gap-x-4 rounded-3xl bg-gray-100 py-3 md:mx-0 lg:w-80"
@@ -23,7 +23,7 @@
         </span>
       </div>
       <p class="text-center text-xl md:text-left lg:text-3xl">
-        ດາວໂຫຼດໄດ້ແລ້ວເທິງ iOS ແລະ Android
+        {{ $t('text_2') }}
       </p>
       <div class="flex items-center justify-center space-x-4 md:justify-start">
         <a
@@ -50,6 +50,19 @@
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "lo": {
+    "text_1": "ມີໃຫ້ບໍລິການແລ້ວ",
+    "text_2": "ດາວໂຫຼດໄດ້ແລ້ວເທິງ iOS ແລະ Android"
+  },
+  "en": {
+    "text_1": "Now Available!",
+    "text_2": "Download on iOS and Android"
+  }
+}
+</i18n>
 
 <script>
 export default {

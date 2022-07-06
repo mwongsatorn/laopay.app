@@ -13,23 +13,32 @@
       <div class="flex flex-col justify-between md:col-span-4">
         <div class="space-y-4">
           <h1 class="mt-8 text-2xl font-bold md:mt-0 lg:text-4xl">
-            ກ່ຽວກັບພວກເຮົາ
+            {{ $t('title') }}
           </h1>
           <h2 class="text-xl font-bold lg:text-2xl">
             LaoPay Vientiane Sole Co., Ltd.
           </h2>
           <p class="lg:text-xl">
-            ບໍລິສັດ ລາວເພ້ ວຽງຈັນ ຈຳກັດຜູ້ດຽວ ກໍ່ຕັ້ງຂຶ້ນໃນປີ 2019
-            ໂດຍເກີດຈາກຄວາມຮ່ວມມືກັນລະຫວ່າງ ບໍລິສັດ ເຣດດີ້ ທູ ຄອນເນັກ (ລາວ) ຈຳກັດ
-            ແລະ ບໍລິສັດ ເອກະໄຊໂຊກ ອະສັງຫາລິມະສັບ ຈຳກັດຜູ້ດຽວ ດຳເນີນທຸລະກິດ
-            ອີວໍເລັດ ພັດທະນາແອັບພິເຄຊັ້ນໂດຍໃຊ້ຊື່ວ່າ: ລາເພ້ (LaoPay) ແລະ
-            ເປັນຜູ້ໃຫ້ບໍລິການ ອອນລາຍເພເມັ້ນ
+            {{ $t('description') }}
           </p>
         </div>
         <div class="mt-8">
-          <LinkButton to="/about-us">Read Me</LinkButton>
+          <LinkButton :to="localePath('/about-us')">Read Me</LinkButton>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "lo": {
+    "title": "ກ່ຽວກັບພວກເຮົາ",
+    "description": "ບໍລິສັດ ລາວເພ້ ວຽງຈັນ ຈຳກັດຜູ້ດຽວ ກໍ່ຕັ້ງຂຶ້ນໃນປີ 2019 ໂດຍເກີດຈາກຄວາມຮ່ວມມືກັນລະຫວ່າງ ບໍລິສັດ ເຣດດີ້ ທູ ຄອນເນັກ (ລາວ) ຈຳກັດ ແລະ ບໍລິສັດ ເອກະໄຊໂຊກ ອະສັງຫາລິມະສັບ ຈຳກັດຜູ້ດຽວ ດຳເນີນທຸລະກິດອີວໍເລັດ ພັດທະນາແອັບພິເຄຊັ້ນໂດຍໃຊ້ຊື່ວ່າ: ລາເພ້ (LaoPay) ແລະເປັນຜູ້ໃຫ້ບໍລິການ ອອນລາຍເພເມັ້ນ"
+  },
+  "en": {
+    "title": "About Us",
+    "description": "LaoPay Vientiane Sole Co., Ltd. is established since 2019 which is in collaboration between Ready To Connect (Laos) Co., Ltd. and Akasaysok Real Estate Sole Co., Ltd. To develop e-Wallet mobile application nationwide namely “LaoPay” and online payment service provider."
+  }
+}
+</i18n>
