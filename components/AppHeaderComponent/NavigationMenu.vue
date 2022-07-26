@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul class="hidden space-x-8 text-sm md:flex">
+  <nav class="hidden md:block">
+    <ul class="flex space-x-8 md:text-sm lg:text-base">
       <NuxtLink
         v-for="menu in menuList"
         :key="menu.routePath"
@@ -11,12 +11,15 @@
         <li>
           <a
             :href="href"
-            class="flex h-24 items-center justify-center border-y-[6px] border-transparent md:flex-col md:space-y-2 lg:flex-row lg:space-y-0 lg:space-x-4"
+            class="flex h-20 items-center justify-center border-y-[4px] border-transparent md:flex-col md:space-y-2 lg:flex-row lg:space-y-0 lg:space-x-4"
             :class="[isActive ? activeClass : inActiveClass]"
             @click="navigate"
           >
             <span>
-              <conponent :is="menu.icon" class="h-6 w-6"></conponent>
+              <conponent
+                :is="menu.icon"
+                class="h-5 w-5 lg:h-6 lg:w-6"
+              ></conponent>
             </span>
             <span>{{ menu.routeName }} </span>
           </a>
@@ -51,7 +54,7 @@
 export default {
   data() {
     return {
-      activeClass: 'border-b-primary-red text-primary-red ',
+      activeClass: 'border-b-primary-red text-primary-red',
       inActiveClass: 'hover:border-b-primary-blue hover:text-primary-blue',
     }
   },

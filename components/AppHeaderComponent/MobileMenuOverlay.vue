@@ -7,11 +7,11 @@
     leave-active-class="transition-all"
     leave-to-class="opacity-0"
     appear
-    @after-enter="$emit('toggleNav')"
+    @after-enter="showMobileNav = !showMobileNav"
   >
     <div
       class="fixed inset-0 overflow-y-auto overflow-x-hidden bg-gradient-to-b from-primary-blue/50 to-primary-red/50 backdrop-blur-sm"
-      @click="$emit('toggleNav')"
+      @click="showMobileNav = !showMobileNav"
     >
       <transition
         name="menu"
@@ -27,8 +27,8 @@
           class="absolute right-0 min-h-full w-[320px] bg-white"
           @click.stop
         >
-          <div class="flex justify-end bg-neutral-900 py-4 px-2 text-white">
-            <button @click="$emit('toggleNav')">
+          <div class="flex justify-end bg-gray-900 py-4 px-2 text-white">
+            <button @click="showMobileNav = !showMobileNav">
               <IconCross class="h-8 w-8"></IconCross>
             </button>
           </div>
@@ -41,9 +41,26 @@
 
 <script>
 export default {
-  props: {
-    showMobileNav: {
-      type: Boolean,
+  data() {
+    return {
+      showMobileNav: false,
+    }
+  },
+  watch: {
+    $route() {
+      this.showMobileNav = false
+    },
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth >= 768 && this.showMobileNav === true)
+        this.showMobileNav = false
     },
   },
 }
