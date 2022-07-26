@@ -1,10 +1,10 @@
 <template>
   <div
     id="hero-section"
-    class="relative h-screen min-h-[45rem] bg-[url('~/assets/images/index/hero-bg-mobile.jpg')] bg-cover bg-center sm:bg-[url('~/assets/images/index/hero-bg-tablet.jpg')] lg:bg-[url('~/assets/images/index/hero-bg-desktop.jpg')]"
+    class="relative h-screen min-h-[640px] bg-[url('~/assets/images/index/hero-bg-mobile.jpg')] bg-cover bg-center sm:bg-[url('~/assets/images/index/hero-bg-tablet.jpg')] lg:bg-[url('~/assets/images/index/hero-bg-desktop.jpg')]"
   >
     <div
-      class="relative px-6 pt-16 text-primary-blue lg:top-1/2 lg:-translate-y-1/2 lg:pt-0"
+      class="flex h-full flex-col justify-start space-y-4 px-4 pt-12 text-primary-blue lg:justify-center lg:pt-0"
     >
       <img
         class="mx-auto w-32 sm:w-36 lg:mx-0 lg:mr-auto lg:w-40"
@@ -12,19 +12,16 @@
         alt=""
       />
       <h1
-        class="pt-4 text-center text-2xl font-extrabold sm:text-4xl lg:text-left lg:text-5xl"
+        class="text-center font-roboto text-2xl font-extrabold sm:text-4xl lg:text-left lg:text-5xl"
       >
-        SMART LIFE
-      </h1>
-      <h1
-        class="text-center text-2xl font-extrabold sm:text-4xl lg:text-left lg:text-5xl"
-      >
+        SMART LIFE <br />
         SUPER <span class="text-primary-red">LIFESTYLE</span> APP
       </h1>
       <p
-        class="pt-4 text-center text-lg font-bold tracking-[0.3rem] sm:text-2xl lg:text-left"
+        class="text-center text-lg font-bold tracking-[0.3rem] sm:text-2xl lg:text-left"
       >
-        {{ $t('text') }}
+        {{ $t('text_1') }} <br />
+        {{ $t('text_2') }}
       </p>
     </div>
   </div>
@@ -33,21 +30,14 @@
 <i18n>
 {
   "lo": {
-    "text": "ໃຫ້ທຸກຮູບແບບຂອງທ່ານ ເປັນເລື່ອງພິເສດ"
+    "text_1": "ໃຫ້ທຸກຮູບແບບຂອງທ່ານ",
+    "text_2": "ເປັນເລື່ອງພິເສດ"
   },
   "en": {
-    "text": "MAKE EVERY OF YOUR LIFESTYLE SPEACIAL"
+    "text_1": "MAKE EVERY OF YOUR",
+    "text_2": "LIFESTYLE SPEACIAL"
   }
 }
 </i18n>
 
-<script>
-export default {
-  props: {
-    bannerSuffix: {
-      type: String,
-      default: '',
-    },
-  },
-}
-</script>
+<script></script>

@@ -1,31 +1,13 @@
 <template>
   <div id="homepage">
-    <QuoteSection :banner-suffix="bannerSuffix"></QuoteSection>
+    <QuoteSection></QuoteSection>
     <ShortAboutUsSection></ShortAboutUsSection>
-    <DownloadAppSection :banner-suffix="bannerSuffix"></DownloadAppSection>
+    <DownloadAppSection></DownloadAppSection>
   </div>
 </template>
 
 <script>
 export default {
   name: 'IndexPage',
-  data() {
-    return {
-      bannerSuffix: 'desktop',
-    }
-  },
-  mounted() {
-    this.changeBannerSuffix()
-    window.addEventListener('resize', this.changeBannerSuffix)
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.changeBannerSuffix)
-  },
-  methods: {
-    changeBannerSuffix() {
-      if (window.innerWidth >= 768) this.bannerSuffix = 'desktop'
-      else this.bannerSuffix = 'mobile'
-    },
-  },
 }
 </script>

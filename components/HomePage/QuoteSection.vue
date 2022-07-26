@@ -1,31 +1,32 @@
 <template>
   <div
     id="quote-section"
-    class="relative -mt-20 h-screen min-h-[45rem] bg-cover bg-[position:50%_70%] md:-mt-24 md:bg-right"
-    :style="{
-      'background-image': `url(${require('~/assets/images/index/banner-2-' +
-        bannerSuffix +
-        '.jpg')})`,
-    }"
+    class="relative h-[calc(100vh-5rem)] min-h-[640px] bg-gradient-to-b from-slate-500 to-yellow-50"
   >
-    <div class="relative top-[15%] mx-auto max-w-xl space-y-6 px-4">
+    <div class="absolute inset-0">
+      <img
+        class="absolute bottom-0 left-0 h-[45%] object-cover object-left sm:h-auto sm:w-[63%]"
+        src="~/assets/images/index/shopping-girl.png"
+        alt=""
+      />
+    </div>
+
+    <div class="mx-auto max-w-lg space-y-6 px-4 pt-12 sm:max-w-xl">
       <h1
-        class="text-center text-2xl font-extrabold uppercase text-white sm:text-3xl md:text-4xl"
+        class="text-center text-2xl font-extrabold uppercase text-white sm:text-3xl lg:text-4xl"
       >
         Super Lifestyle App
       </h1>
       <p
-        class="text-center text-lg font-light tracking-wider text-white sm:text-xl md:text-2xl"
+        class="text-center text-lg font-light tracking-wider text-white sm:text-xl lg:text-2xl"
       >
         {{ $t('quote') }}
       </p>
 
-      <div
-        class="mx-auto flex max-w-lg flex-wrap justify-center gap-x-8 gap-y-4 md:gap-x-12"
-      >
+      <div class="flex flex-wrap justify-center gap-y-4 gap-x-10 sm:gap-x-12">
         <div v-for="n in 8" :key="n">
           <img
-            class="h-6 md:h-7"
+            class="h-6 sm:h-7 lg:h-8"
             :src="require(`~/assets/images/partner-logo/partner-${n}.png`)"
             alt=""
           />
@@ -46,13 +47,4 @@
 }
 </i18n>
 
-<script>
-export default {
-  props: {
-    bannerSuffix: {
-      type: String,
-      default: '',
-    },
-  },
-}
-</script>
+<script></script>
