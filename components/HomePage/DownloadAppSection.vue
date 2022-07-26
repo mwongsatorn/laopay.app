@@ -12,7 +12,7 @@
     </div>
 
     <div
-      class="relative mx-auto max-w-7xl px-4 pt-16 md:top-1/2 md:-translate-y-1/2 md:pt-0"
+      class="relative mx-auto flex h-full max-w-7xl items-start px-6 py-12 md:items-center"
     >
       <div class="mx-auto max-w-xs space-y-6 sm:max-w-sm md:mx-0 lg:max-w-md">
         <p class="text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl">

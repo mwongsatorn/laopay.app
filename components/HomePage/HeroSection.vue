@@ -1,10 +1,10 @@
 <template>
   <div
     id="hero-section"
-    class="relative h-screen min-h-[640px] bg-[url('~/assets/images/index/hero-bg-mobile.jpg')] bg-cover bg-center sm:bg-[url('~/assets/images/index/hero-bg-tablet.jpg')] lg:bg-[url('~/assets/images/index/hero-bg-desktop.jpg')]"
+    class="h-screen min-h-[640px] bg-[url('~/assets/images/index/hero-bg-mobile.jpg')] bg-cover bg-center sm:bg-[url('~/assets/images/index/hero-bg-tablet.jpg')] lg:bg-[url('~/assets/images/index/hero-bg-desktop.jpg')]"
   >
     <div
-      class="flex h-full flex-col justify-start space-y-4 px-4 pt-12 text-primary-blue lg:justify-center lg:pt-0"
+      class="flex h-full flex-col justify-start space-y-4 px-6 py-12 text-primary-blue lg:justify-center lg:pt-0"
     >
       <img
         class="mx-auto w-32 sm:w-36 lg:mx-0 lg:mr-auto lg:w-40"

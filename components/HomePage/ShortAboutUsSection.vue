@@ -1,13 +1,13 @@
 <template>
-  <div id="short-about-us-section" class="relative bg-stone-400">
+  <div id="short-about-us-section" class="bg-stone-400">
     <div
-      class="mx-auto grid min-h-[640px] max-w-xl grid-cols-1 place-content-center gap-8 px-4 py-20 md:max-w-7xl md:grid-cols-2"
+      class="mx-auto grid min-h-[640px] max-w-xl grid-cols-1 place-content-center gap-8 px-6 py-12 md:max-w-7xl md:grid-cols-2"
     >
       <div
         class="h-[280px] w-full bg-[url('~/assets/images/office.jpg')] bg-cover bg-center sm:h-[360px]"
       />
 
-      <div class="flex flex-col justify-between space-y-8 py-8">
+      <div class="flex flex-col justify-between space-y-8">
         <div class="space-y-4">
           <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
             {{ $t('title') }}

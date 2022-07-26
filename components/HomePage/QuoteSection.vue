@@ -5,13 +5,13 @@
   >
     <div class="absolute inset-0">
       <img
-        class="absolute bottom-0 left-0 h-[45%] object-cover object-left sm:h-auto sm:w-[63%]"
+        class="absolute bottom-0 left-0 h-[45%] object-cover object-left sm:h-auto sm:w-[60%]"
         src="~/assets/images/index/shopping-girl.png"
         alt=""
       />
     </div>
 
-    <div class="mx-auto max-w-lg space-y-6 px-4 pt-12 sm:max-w-xl">
+    <div class="mx-auto max-w-lg space-y-6 px-6 py-12 sm:max-w-xl sm:space-y-8">
       <h1
         class="text-center text-2xl font-extrabold uppercase text-white sm:text-3xl lg:text-4xl"
       >
@@ -23,7 +23,7 @@
         {{ $t('quote') }}
       </p>
 
-      <div class="flex flex-wrap justify-center gap-y-4 gap-x-10 sm:gap-x-12">
+      <div class="flex flex-wrap justify-center gap-y-4 gap-x-8">
         <div v-for="n in 8" :key="n">
           <img
             class="h-6 sm:h-7 lg:h-8"
