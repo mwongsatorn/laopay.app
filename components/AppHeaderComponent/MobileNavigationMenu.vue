@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="flex flex-col space-y-4 p-4 pt-8">
+    <ul class="flex flex-col space-y-4 px-6 py-12">
       <NuxtLink
         v-for="menu in menuList"
         :key="menu.routePath"

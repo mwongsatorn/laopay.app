@@ -2,7 +2,7 @@
   <header
     class="sticky top-0 left-0 z-[9999] w-full bg-white font-medium capitalize shadow-md"
   >
-    <div class="mx-auto flex h-20 max-w-7xl items-center px-4">
+    <div class="mx-auto flex h-20 max-w-7xl items-center px-6">
       <div>
         <NuxtLink :to="localePath('/')">
           <img src="~/assets/images/laopay-logo.png" alt="" class="w-24" />
