@@ -18,21 +18,13 @@
 
 <script>
 export default {
-  beforeRouteEnter(to, from, next) {
-    if (
-      to.path === '/products-and-services' ||
-      to.path === '/products-and-services/'
-    )
-      next('/products-and-services/highlight-features')
-    else next()
-  },
-  beforeRouteUpdate(to, from, next) {
-    if (
-      to.path === '/products-and-services' ||
-      to.path === '/products-and-services/'
-    )
-      next(false)
-    else next()
+  middleware({ app, redirect, route }) {
+    if (route.name.includes('products-and-services___')) {
+      const currentLocale = app.i18n.locale
+      redirect({
+        name: `products-and-services-highlight-features___${currentLocale}`,
+      })
+    }
   },
   scrollToTop: true,
   data() {
