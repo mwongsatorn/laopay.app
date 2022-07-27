@@ -18,21 +18,9 @@
 
 <script>
 export default {
-  beforeRouteEnter(to, from, next) {
-    if (
-      to.path === '/products-and-services' ||
-      to.path === '/products-and-services/'
-    )
-      next('/products-and-services/highlight-features')
-    else next()
-  },
-  beforeRouteUpdate(to, from, next) {
-    if (
-      to.path === '/products-and-services' ||
-      to.path === '/products-and-services/'
-    )
-      next(false)
-    else next()
+  middleware({ app, redirect }) {
+    const currentLocale = app.i18n.currentLocale
+    redirect({ name: `products-and-services___${currentLocale}` })
   },
   scrollToTop: true,
   data() {
