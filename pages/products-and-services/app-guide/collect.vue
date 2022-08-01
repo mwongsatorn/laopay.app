@@ -1,6 +1,8 @@
 <template>
   <div class="bg-primary-blue py-12 px-4 text-white sm:px-8 lg:px-12">
-    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">ຮັບເງິນ</h1>
+    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
+      {{ $t('title') }}
+    </h1>
     <div class="flex flex-nowrap overflow-x-auto py-8">
       <div
         v-for="(guide, index) in collectGuide"
@@ -20,12 +22,27 @@
           class="max-h-[450px]"
         />
         <div>
-          <p class="text-center">{{ guide.description }}</p>
+          <p class="text-center">{{ $t(guide.description) }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "lo": {
+    "title": "ຮັບເງິນ",
+    "step1": "ກົດເລືອກຄໍາສັ່ງ \"ຮັບເງິນ\" (Collect) ໃນໜ້າເມນູ",
+    "step2": "ຂົ້າສູ່ໜ້າ \"ຮັບເງິນ\" (Collect) ແລະຜູ້ໃຊ້ບໍລິການສາມາດນໍາຄິວອາໂຄ້ດທີ່ໄດ້ຮັບ ໃຫ້ຜູ້ຈ່າຍສະແກນ ໄດ້ໂດຍກົງ ຫລື ສາມາດແຊຮູບພາບຄິວອາໂຄ້ດ ສົ່ງໄປໃຫ້ຜູ້ຈ່າຍອີກຝ່າຍໜຶ່ງໄດ້"
+  },
+  "en": {
+    "title": "Collect",
+    "step1": "Click \"Collect\" button on LaoPay Homepage",
+    "step2": "Visit \"Collect\" page and show QR code to scan directly or share QR Code picture to payer"
+  }
+}
+</i18n>
 
 <script>
 export default {
@@ -34,12 +51,11 @@ export default {
       collectGuide: [
         {
           image: '/homepage.jpg',
-          description: 'ກົດເລືອກຄໍາສັ່ງ “ຮັບເງິນ (Collect)” ໃນໜ້າເມນູ',
+          description: 'step1',
         },
         {
           image: '/collect/collect-step-2.jpg',
-          description:
-            'ຂົ້າສູ່ໜ້າ “ຮັບເງິນ (Collect)” ແລະຜູ້ໃຊ້ບໍລິການສາມາດນໍາຄິວອາໂຄ້ດທີ່ໄດ້ຮັບ ໃຫ້ຜູ້ຈ່າຍສະແກນ ໄດ້ໂດຍກົງ ຫລື ສາມາດແຊຮູບພາບຄິວອາໂຄ້ດ ສົ່ງໄປໃຫ້ຜູ້ຈ່າຍອີກຝ່າຍໜຶ່ງໄດ້ ',
+          description: 'step2',
         },
       ],
     }
