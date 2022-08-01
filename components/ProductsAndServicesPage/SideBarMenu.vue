@@ -10,7 +10,7 @@
             v-for="menu in menuList"
             :key="menu.routePath"
             v-slot="{ href, navigate, isActive, isExactActive }"
-            :to="menu.routePath"
+            :to="localePath(menu.routePath)"
             custom
           >
             <li v-if="!menu.subMenu" @click="$emit('onClickMenu')">
@@ -19,20 +19,20 @@
                 :class="[isExactActive ? 'font-bold text-primary-red' : '']"
                 :href="href"
                 @click="navigate"
-                >{{ menu.routeName }}</a
+                >{{ $t(menu.routeName) }}</a
               >
             </li>
 
             <li v-else class="py-2">
               <span :class="[isActive ? 'font-bold text-primary-red' : '']">
-                {{ menu.routeName }}
+                {{ $t(menu.routeName) }}
               </span>
               <ul class="mt-4 text-sm">
                 <NuxtLink
                   v-for="subMenu in menu.subMenu"
                   :key="subMenu.routePath"
                   v-slot="{ href, navigate, isExactActive }"
-                  :to="subMenu.routePath"
+                  :to="localePath(subMenu.routePath)"
                   custom
                 >
                   <li @click="$emit('onClickMenu')">
@@ -45,7 +45,7 @@
                       ]"
                       :href="href"
                       @click="navigate"
-                      >{{ subMenu.routeName }}</a
+                      >{{ $t(subMenu.routeName) }}</a
                     >
                   </li>
                 </NuxtLink>
@@ -69,6 +69,39 @@
   </div>
 </template>
 
+<i18n>
+{
+  "lo": {
+    "highlightFeatures": "ບໍລິການຍອດນິຍົມ",
+    "appGuide": {
+      "mainMenu": "ວິທີການໃຊ້ງານ",
+        "subMenu": {
+        "signup": "ລົງທະບຽນ",
+        "login": "ເຂົ້າສູ່ລະບົບ",
+        "forgotPassword": "ລືມລະຫັດຜ່ານ",
+        "pay": "ຈ່າຍ",
+        "collect": "ຮັບເງິນ",
+        "walletTopUp": "ການຕື່ມເງິນເຂົ້າກະເປົາເງິນ"
+      }
+    }   
+  },
+  "en": {
+    "highlightFeatures": "Highlight Features",
+    "appGuide": {
+      "mainMenu": "App Guide",
+      "subMenu": {
+        "signup": "Sign Up",
+        "login": "Log In",
+        "forgotPassword": "Forgot Password",
+        "pay": "Pay",
+        "collect": "Collect",
+        "walletTopUp": "Wallet Top-Up"
+      }
+    }
+  }
+}
+</i18n>
+
 <script>
 export default {
   props: {
@@ -81,35 +114,35 @@ export default {
       menuList: [
         {
           routePath: '/products-and-services/highlight-features',
-          routeName: 'ບໍລິການຍອດນິຍົມ',
+          routeName: 'highlightFeatures',
         },
         {
           routePath: '/products-and-services/app-guide',
-          routeName: 'ວິທີການໃຊ້ງານ',
+          routeName: 'appGuide.mainMenu',
           subMenu: [
             {
               routePath: '/products-and-services/app-guide/sign-up',
-              routeName: 'ລົງທະບຽນ',
+              routeName: 'appGuide.subMenu.signup',
             },
             {
               routePath: '/products-and-services/app-guide/log-in',
-              routeName: 'ເຂົ້າສູ່ລະບົບ',
+              routeName: 'appGuide.subMenu.login',
             },
             {
               routePath: '/products-and-services/app-guide/forgot-password',
-              routeName: 'ລືມລະຫັດຜ່ານ',
+              routeName: 'appGuide.subMenu.forgotPassword',
             },
             {
               routePath: '/products-and-services/app-guide/pay',
-              routeName: 'ຈ່າຍ',
+              routeName: 'appGuide.subMenu.pay',
             },
             {
               routePath: '/products-and-services/app-guide/collect',
-              routeName: 'ຮັບເງິນ',
+              routeName: 'appGuide.subMenu.collect',
             },
             {
               routePath: '/products-and-services/app-guide/wallet-top-up',
-              routeName: 'ການຕື່ມເງິນເຂົ້າກະເປົາເງິນ',
+              routeName: 'appGuide.subMenu.walletTopUp',
             },
           ],
         },
