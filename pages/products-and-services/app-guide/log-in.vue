@@ -1,6 +1,8 @@
 <template>
   <div class="bg-primary-blue py-12 px-4 text-white sm:px-8 lg:px-12">
-    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">ເຂົ້າສູ່ລະບົບ</h1>
+    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
+      {{ $t('title') }}
+    </h1>
     <div class="flex flex-nowrap overflow-x-auto py-8">
       <div
         v-for="(guide, index) in logInGuide"
@@ -20,12 +22,29 @@
           class="max-h-[450px]"
         />
         <div>
-          <p class="text-center">{{ guide.description }}</p>
+          <p class="text-center">{{ $t(guide.description) }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<i18n>
+{
+  "lo": {
+    "title": "ເຂົ້າສູ່ລະບົບ",
+    "step1": "ກົດປຸ່ມ \"ເຂົ້າສູ່ລະບົບ\" (Log in)",
+    "step2": "ໃສ່ເບີໂທລະສັບໃນຊ່ອງຊື່ຜູ້ໃຊ້ (Usename) ແລະ ລະຫັດຜ່ານ (Passsword)",
+    "step3": "ເຂົ້າສູ່ໜ້າຈໍຫລັກຂອງແອັບພິເຄຊັ້ນ LaoPay"
+  },
+  "en": {
+    "title": "Log In",
+    "step1": "Click \"Login\" button",
+    "step2": "Fill in registered mobile number and password",
+    "step3": "Visit LaoPay Homepage"
+  }
+}
+</i18n>
 
 <script>
 export default {
@@ -34,16 +53,15 @@ export default {
       logInGuide: [
         {
           image: '/welcome-page.jpg',
-          description: 'ກົດປຸ່ມ “ເຂົ້າສູ່ລະບົບ (Log in)',
+          description: 'step1',
         },
         {
           image: '/log-in/login-step-2.jpg',
-          description:
-            'ໃສ່ເບີໂທລະສັບໃນຊ່ອງຊື່ຜູ້ໃຊ້ (Usename) ແລະ ລະຫັດຜ່ານ (Passsword)',
+          description: 'step2',
         },
         {
           image: '/homepage.jpg',
-          description: 'ເຂົ້າສູ່ໜ້າຈໍຫລັກຂອງແອັບພິເຄຊັ້ນ LaoPay ',
+          description: 'step3',
         },
       ],
     }
