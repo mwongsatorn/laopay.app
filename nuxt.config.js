@@ -24,7 +24,7 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/router'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
@@ -61,6 +61,7 @@ export default {
       fallbackLocale: 'lo',
     },
     vueI18nLoader: true,
+    skipSettingLocaleOnNavigate: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
