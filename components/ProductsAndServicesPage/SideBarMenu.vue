@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-20 bottom-0 z-10 whitespace-nowrap bg-white transition-all duration-300 md:top-24"
+    class="fixed top-20 bottom-0 z-10 whitespace-nowrap bg-white transition-all duration-300"
     :class="[showSideBar ? 'w-[280px]' : 'w-0']"
   >
     <div class="h-full overflow-y-auto">
