@@ -1,7 +1,7 @@
 <template>
   <div
     id="quote-section"
-    class="relative h-[calc(100vh-5rem)] min-h-[640px] bg-gradient-to-b from-slate-500 to-yellow-50"
+    class="relative h-[calc(100vh-5rem)] max-h-[720px] min-h-[640px] bg-gradient-to-b from-slate-500 to-yellow-50"
   >
     <div class="absolute inset-0">
       <img
