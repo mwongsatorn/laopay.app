@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="relative flex h-[640px] flex-col bg-primary-blue py-12 text-white"
+      class="relative flex h-screen max-h-[720px] min-h-[640px] flex-col bg-primary-blue py-12 text-white"
     >
       <div class="relative mx-auto max-w-xl space-y-6 px-6">
         <p class="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">
