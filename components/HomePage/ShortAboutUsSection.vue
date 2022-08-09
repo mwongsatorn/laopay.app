@@ -7,7 +7,7 @@
       class="mx-auto flex max-w-7xl text-white sm:justify-center lg:justify-start"
     >
       <div
-        class="flex h-screen max-h-[720px] min-h-[640px] flex-col space-y-8 py-12 px-6 sm:max-w-xl lg:max-w-[380px] lg:justify-center"
+        class="flex h-[calc(100vh-5rem)] max-h-[720px] min-h-[640px] flex-col space-y-8 py-12 px-6 sm:max-w-3xl lg:max-w-[400px] lg:justify-center"
       >
         <h1 class="text-3xl font-bold text-sky-200 sm:text-4xl lg:text-5xl">
           {{ $t('title') }}

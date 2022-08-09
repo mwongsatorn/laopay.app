@@ -1,7 +1,7 @@
 <template>
   <div
     id="download-app-section"
-    class="relative h-screen max-h-[720px] min-h-[640px] bg-[#F9E4D3]"
+    class="relative h-[calc(100vh-5rem)] max-h-[720px] min-h-[640px] bg-[#F9E4D3]"
   >
     <div class="absolute inset-0">
       <img
