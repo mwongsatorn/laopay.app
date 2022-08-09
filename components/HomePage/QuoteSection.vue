@@ -5,7 +5,7 @@
   >
     <div class="absolute inset-0">
       <img
-        class="absolute bottom-0 left-0 h-[45%] object-cover object-left sm:h-auto sm:w-[60%]"
+        class="absolute bottom-0 left-0 h-[45%] object-cover object-left sm:h-auto sm:w-[60%] sm:max-w-[1080px]"
         src="~/assets/images/index/shopping-girl.png"
         alt=""
       />
