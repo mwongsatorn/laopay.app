@@ -1,7 +1,7 @@
 <template>
   <div
     id="share-holders-board"
-    class="fixed inset-0 z-[9999] overflow-y-auto bg-black/80 backdrop-blur-sm"
+    class="hide-scrollbar fixed inset-0 z-[9999] overflow-y-auto bg-black/80 backdrop-blur-sm"
   >
     <div class="absolute top-4 right-4">
       <button @click="$emit('closeBoard')">

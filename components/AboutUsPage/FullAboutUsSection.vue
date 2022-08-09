@@ -7,7 +7,7 @@
       class="mx-auto flex h-[calc(100vh-5rem)] max-h-[720px] min-h-[640px] max-w-7xl text-white sm:justify-center lg:items-center lg:justify-start"
     >
       <div
-        class="flex h-3/4 flex-col space-y-8 py-12 px-6 sm:h-3/5 sm:max-w-3xl lg:h-full lg:max-w-[380px]"
+        class="flex h-3/4 flex-col space-y-8 py-12 px-6 sm:h-3/5 sm:max-w-3xl lg:h-full lg:max-w-[400px]"
       >
         <h1 class="text-3xl font-bold text-sky-200 sm:text-4xl lg:text-5xl">
           {{ $t('title') }}
@@ -16,18 +16,16 @@
           LaoPay Vientiane Sole Co., Ltd.
         </h2>
 
-        <div class="h-4/5 space-y-6 overflow-y-auto pr-6">
+        <div class="default-scrollbar h-4/5 space-y-6 overflow-y-auto pr-6">
           <div class="flex space-x-8">
-            <div class="w-1/4 rounded-full bg-blue-300 p-1.5 sm:w-1/6 lg:w-1/3">
+            <div class="w-[80px] rounded-full bg-blue-300 p-1.5">
               <img
                 class="w-full"
                 src="~/assets/images/mos-laos-logo.png"
                 alt=""
               />
             </div>
-            <div
-              class="w-1/4 rounded-full bg-yellow-300 p-1.5 sm:w-1/6 lg:w-1/3"
-            >
+            <div class="w-[80px] rounded-full bg-yellow-300 p-1.5">
               <img
                 class="w-full"
                 src="~/assets/images/partner-logo/partner-7.png"
