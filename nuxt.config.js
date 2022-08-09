@@ -9,7 +9,7 @@ export default {
       lang: 'en',
     },
     bodyAttrs: {
-      class: ['min-w-[320px]', 'min-h-screen'],
+      class: ['min-w-[320px]', 'min-h-screen', 'default-scrollbar'],
     },
     meta: [
       { charset: 'utf-8' },
