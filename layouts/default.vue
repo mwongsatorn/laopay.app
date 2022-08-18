@@ -10,7 +10,11 @@
     >
       <HeroSection v-if="isHomePage"></HeroSection>
     </transition>
-    <AppHeader></AppHeader>
+    <AppHeader @toggleOverlay="toggleOverlay"></AppHeader>
+    <MobileMenuOverlay
+      v-if="showMobileMenuOverlay"
+      @toggleOverlay="toggleOverlay"
+    />
     <Nuxt></Nuxt>
     <AppFooter></AppFooter>
   </div>
@@ -18,9 +22,29 @@
 
 <script>
 export default {
+  data() {
+    return {
+      showMobileMenuOverlay: null,
+      overflowClass: '',
+    }
+  },
+  head() {
+    return {
+      bodyAttrs: {
+        class: [this.overflowClass],
+      },
+    }
+  },
   computed: {
     isHomePage() {
       return this.$route.name.includes('index')
+    },
+  },
+  methods: {
+    toggleOverlay() {
+      this.showMobileMenuOverlay = !this.showMobileMenuOverlay
+      if (this.showMobileMenuOverlay === false) this.overflowClass = ''
+      else this.overflowClass = 'overflow-hidden'
     },
   },
 }

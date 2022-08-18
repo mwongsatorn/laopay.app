@@ -10,7 +10,7 @@
     @after-enter="showMobileNav = !showMobileNav"
   >
     <div
-      class="fixed inset-0 overflow-y-auto overflow-x-hidden bg-gradient-to-b from-primary-blue/50 to-primary-red/50 backdrop-blur-sm"
+      class="fixed inset-0 z-[9999] overflow-y-auto overflow-x-hidden bg-gradient-to-b from-primary-blue/50 to-primary-red/50 backdrop-blur-sm"
       @click="showMobileNav = !showMobileNav"
     >
       <transition
@@ -22,7 +22,7 @@
         leave-to-class="translate-x-[100%]"
         @after-leave="$emit('toggleOverlay')"
       >
-        <div
+        <aside
           v-show="showMobileNav"
           class="absolute right-0 min-h-full w-[320px] bg-white"
           @click.stop
@@ -33,7 +33,7 @@
             </button>
           </div>
           <MobileNavigationMenu></MobileNavigationMenu>
-        </div>
+        </aside>
       </transition>
     </div>
   </transition>

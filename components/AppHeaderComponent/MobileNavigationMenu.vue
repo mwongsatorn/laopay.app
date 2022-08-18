@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="font-medium capitalize">
     <ul class="flex flex-col space-y-4 px-6 py-12">
       <NuxtLink
         v-for="menu in menuList"
