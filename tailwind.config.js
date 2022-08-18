@@ -13,8 +13,8 @@ module.exports = {
         'noto-sans-lao': ['Noto Sans Lao', 'sans-serif'],
       },
       colors: {
-        'primary-blue': '#171045',
-        'primary-red': '#ED1C24',
+        'primary-blue': '#293462',
+        'primary-red': '#D61C4E',
       },
       animation: {
         blob: 'blob 7s infinite',
