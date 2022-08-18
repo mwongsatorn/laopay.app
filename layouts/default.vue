@@ -1,5 +1,5 @@
 <template>
-  <div id="default-layout" class="">
+  <div id="default-layout" class="flex min-h-screen flex-col">
     <transition
       name="hero-section"
       enter-active-class="transition-all duration-300 delay-300"
@@ -12,6 +12,7 @@
     </transition>
     <AppHeader></AppHeader>
     <Nuxt></Nuxt>
+    <AppFooter></AppFooter>
   </div>
 </template>
 
