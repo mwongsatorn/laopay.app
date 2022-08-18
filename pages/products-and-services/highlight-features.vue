@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="highlight-features">
     <div
-      class="relative flex h-screen max-h-[720px] min-h-[640px] flex-col bg-primary-blue py-12 text-white"
+      class="relative flex h-[calc(100vh-5rem)] max-h-[720px] min-h-[640px] flex-col bg-primary-blue py-12 text-white"
     >
       <div class="relative mx-auto max-w-xl space-y-6 px-6">
         <p class="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">
@@ -12,25 +12,12 @@
         </p>
       </div>
 
-      <div class="relative my-auto flex w-full justify-center px-4">
-        <div class="absolute h-full w-full max-w-lg">
-          <div
-            class="custom-blur absolute top-8 left-0 h-52 w-52 animate-blob rounded-full bg-amber-600 sm:h-60 sm:w-60 lg:h-72 lg:w-72"
-          />
-          <div
-            class="animation-delay-2000 custom-blur absolute top-8 right-0 h-52 w-52 animate-blob rounded-full bg-purple-600 sm:h-60 sm:w-60 lg:h-72 lg:w-72"
-          />
-          <div
-            class="animation-delay-4000 custom-blur absolute -bottom-8 left-20 h-52 w-52 animate-blob rounded-full bg-primary-red sm:h-60 sm:w-60 lg:h-72 lg:w-72"
-          />
-        </div>
-        <div class="relative">
-          <img
-            src="~/assets/images/products-and-services/highlight-features/app-showcase.png"
-            alt=""
-            class="max-h-[320px]"
-          />
-        </div>
+      <div class="my-auto flex w-full justify-center px-4">
+        <img
+          src="~/assets/images/products-and-services/highlight-features/app-showcase.png"
+          alt=""
+          class="max-h-[320px]"
+        />
       </div>
     </div>
 
