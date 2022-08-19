@@ -9,7 +9,7 @@
 
       <div class="ml-auto flex items-center font-medium capitalize">
         <NavigationMenu></NavigationMenu>
-        <LanguageSwitch class="md:ml-8"></LanguageSwitch>
+        <LanguageSwitch class="ml-8 hidden md:flex"></LanguageSwitch>
         <IconHamburgerMenu
           class="ml-4 inline h-6 w-6 cursor-pointer transition-all md:hidden"
           @click.native="$emit('toggleOverlay')"

@@ -27,7 +27,8 @@
           class="absolute right-0 min-h-full w-[320px] bg-white"
           @click.stop
         >
-          <div class="flex justify-end bg-gray-900 py-4 px-2 text-white">
+          <div class="flex justify-between bg-gray-900 py-4 px-6 text-white">
+            <LanguageSwitch></LanguageSwitch>
             <button @click="showMobileNav = !showMobileNav">
               <IconCross class="h-8 w-8"></IconCross>
             </button>

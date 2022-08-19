@@ -1,19 +1,19 @@
 <template>
-  <div class="relative flex bg-gray-200 font-roboto text-sm">
+  <div class="relative flex bg-gray-200 font-roboto text-sm font-medium">
     <div
       :class="[currentLocale === 'lo' ? 'left-0' : 'right-0']"
       class="absolute h-8 w-8 bg-primary-red"
     ></div>
     <NuxtLink
       :to="switchLocalePath('lo')"
-      :class="[currentLocale === 'lo' ? 'text-white' : '']"
+      :class="[currentLocale === 'lo' ? 'text-white' : 'text-black']"
       class="relative flex h-8 w-8 items-center justify-center"
     >
       LO
     </NuxtLink>
     <NuxtLink
       :to="switchLocalePath('en')"
-      :class="[currentLocale === 'en' ? 'text-white' : '']"
+      :class="[currentLocale === 'en' ? 'text-white' : 'text-black']"
       class="relative flex h-8 w-8 items-center justify-center"
     >
       EN
