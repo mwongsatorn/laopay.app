@@ -1,11 +1,33 @@
 <template>
-  <div class="mx-auto max-w-7xl px-4 py-12">
-    <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">ກ່ຽວກັບການລົງທຶນ</h1>
-    <div class="w-full pt-8">
-      <img
-        src="~/assets/images/investor-relation/laopay-teaser-040322-01.png"
-        alt=""
-      />
-    </div>
+  <div id="investor-relation">
+    <ShortInvestmentProfile
+      @showFullPage="showFullPage = true"
+    ></ShortInvestmentProfile>
+    <FullInvestmentProfile
+      v-show="showFullPage"
+      @closeFullPage="showFullPage = false"
+    ></FullInvestmentProfile>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showFullPage: null,
+    }
+  },
+  head() {
+    return {
+      bodyAttrs: {
+        class: [this.bodyClass],
+      },
+    }
+  },
+  computed: {
+    bodyClass() {
+      return this.showFullPage ? 'overflow-hidden' : ''
+    },
+  },
+}
+</script>

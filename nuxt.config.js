@@ -35,6 +35,7 @@ export default {
     { path: '~/components/HomePage' },
     { path: '~/components/AboutUsPage' },
     { path: '~/components/ProductsAndServicesPage' },
+    { path: '~/components/InvestorRelationPage' },
     { path: '~/components/AppHeaderComponent' },
   ],
 
