@@ -4,19 +4,19 @@
     class="bg-[url('~/assets/images/index/sau-bg-mobile.jpg')] bg-cover bg-[position:0%_80%] sm:bg-[url('~/assets/images/index/sau-bg-tablet.jpg')] lg:bg-[url('~/assets/images/index/sau-bg-desktop.jpg')]"
   >
     <div
-      class="mx-auto flex h-[calc(100vh-5rem)] max-h-[720px] min-h-[640px] max-w-7xl text-white sm:justify-center lg:items-center lg:justify-start"
+      class="mx-auto flex h-[calc(100vh-5rem)] max-w-7xl text-white sm:justify-center lg:items-center lg:justify-start"
     >
       <div
         class="flex h-3/4 flex-col space-y-8 py-12 px-6 sm:h-3/5 sm:max-w-3xl lg:h-full lg:max-w-[400px]"
       >
-        <h1 class="text-3xl font-bold text-sky-200 sm:text-4xl lg:text-5xl">
+        <h1 class="text-2xl font-bold text-sky-200 sm:text-3xl lg:text-4xl">
           {{ $t('title') }}
         </h1>
         <h2 class="font-roboto text-lg font-bold sm:text-xl lg:text-2xl">
           LaoPay Vientiane Sole Co., Ltd.
         </h2>
 
-        <div class="default-scrollbar h-4/5 space-y-6 overflow-y-auto pr-6">
+        <div class="default-scrollbar space-y-6 overflow-y-auto pr-6">
           <div class="flex space-x-8">
             <div class="w-[80px] rounded-full bg-blue-300 p-1.5">
               <img
@@ -36,12 +36,6 @@
           <p class="text-base lg:text-lg">
             {{ $t('description') }}
           </p>
-          <div
-            class="cursor-pointer text-base font-bold text-sky-200 underline lg:text-lg"
-            @click="$emit('showBoard')"
-          >
-            Board of ShareHolders
-          </div>
         </div>
       </div>
     </div>
