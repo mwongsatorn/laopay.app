@@ -1,6 +1,7 @@
 <template>
   <div id="about-us">
-    <FullAboutUsSection @showBoard="showBoard = true"> </FullAboutUsSection>
+    <FullAboutUsSection> </FullAboutUsSection>
+    <ShareHoldersList @showBoard="showBoard = true"></ShareHoldersList>
     <ShareHoldersBoard v-show="showBoard" @closeBoard="showBoard = false">
     </ShareHoldersBoard>
   </div>
